@@ -42,11 +42,25 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         while True:
             time.sleep(1 / self.clock_rate)  # Simulate clock speed
             self.logical_clock += 1  # Internal event
+
+            message = self.queue.pop(0)
             
-            action = random.randint(1, 10)
-            if action <= 3:
-                target = random.choice(self.peers)
-                self.send_message(target)
+            if message:
+                now = datetime.now()
+                with open(self.log_file, "a") as f:
+                    f.write(f"[RECEIVED] Clock: {self.logical_clock} | Global Time: {now} | Queue Length: {len(self.queue)}\n")
+            else:
+                action = random.randint(1, 10)
+                if action == 1:
+                    self.send_message(self.peers[1])
+                elif action == 2:
+                    self.send_message(self.peers[2])
+                elif action == 3: 
+                    pass
+                else:
+                    #Trigger an internal event 
+                    with open(self.log_file, "a") as f:
+                        f.write(f"[INTERNAL EVENT] Clock: {self.logical_clock} | Global Time: {now}\n")
 
     def send_message(self, target):
         """Send a message to another machine."""

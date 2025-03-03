@@ -34,8 +34,13 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         server.start()
         server.wait_for_termination()
 
-    def run(self, port):
-        """Main loop for processing messages and events."""
+    def run(self, port, t1, t2, t3):
+        """Main loop for processing messages and events
+        t1: probability threshold for sending msg to machine A
+        t2: probability threshold for sending msg to machine B
+        t3: probability threshold for sending msg to both machines
+        above t3: internal event
+        """
         process = multiprocessing.Process(target=self.start_server, args=(port,))
         process.start()
 
@@ -51,11 +56,11 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
                     f.write(f"[RECEIVED] Clock: {self.logical_clock} | Global Time: {now} | Queue Length: {len(self.queue)}\n")
             else:
                 action = random.randint(1, 10)
-                if action == 1:
+                if action < t1:
                     self.send_message(self.peers[1])
-                elif action == 2:
+                elif action < t2:
                     self.send_message(self.peers[2])
-                elif action == 3: 
+                elif action < t3: 
                     pass
                 else:
                     #Trigger an internal event 

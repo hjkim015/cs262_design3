@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service PeerService{
+    rpc SendMessage(Message) returns (Response);
+}
+
+message Message{
+    int32 logical_clock = 1;
+    string sender_id = 2;
+}
+
+message Response{
+    bool success = 1;
+}

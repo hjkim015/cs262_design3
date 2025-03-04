@@ -1,6 +1,0 @@
-2025-03-03 23:01:12 - [INIT] with clock rate 6 and peers ['localhost:50051', 'localhost:50052']
-2025-03-03 23:01:14 - [SENT] to Machine 1, Logical clock: 0
-2025-03-03 23:01:14 - [INTERNAL], Logical clock: 2
-2025-03-03 23:01:14 - [INTERNAL], Logical clock: 3
-2025-03-03 23:01:15 - [SENT] to Machine 0, Logical clock: 3
-2025-03-03 23:01:15 - [SENT] to Machine 1, Logical clock: 3

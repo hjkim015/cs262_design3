@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # Run the experiment N_TRIALS
     for _ in range(N_TRIALS):
         # Create a unique logging folder for each run
-        log_folder = f"logs/run_clock_{int(time.time())}"
+        log_folder = f"logs/run_prob_{int(time.time())}"
         os.makedirs(log_folder, exist_ok=True)
         # Save config to folder
         with open(f"{log_folder}/config.yaml", "w") as f:

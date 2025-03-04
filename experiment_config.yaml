@@ -1,8 +1,8 @@
-CYCLE_MAX: 5 # maximum clock rate
+CYCLE_MAX: 6 # maximum clock rate
 DURATION: 60 # simulation duration in seconds
 N_TRIALS: 1 # number of trials
 N_MACHINES: 3 # number of machines
-PROB_MSG_A: 3 # probability threshold of sending message to machine A (out of 10)
+PROB_MSG_A: 4 # probability threshold of sending message to machine A (out of 10)
 PROB_MSG_B: 5 # probability threshold of sending message to machine B
-PROB_MSG_C: 7 # probability threshold of sending message to machine A, B (above this is probability of internal event)
+PROB_MSG_C: 6 # probability threshold of sending message to machine A, B (above this is probability of internal event)
 BASE_PORT: 50050

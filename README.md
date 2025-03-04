@@ -1,18 +1,19 @@
 # cs262_design3: Scale Models and Logical Clocks
 
 ### Description
-In this design excercise, we built a simple, client-server chat application that allows multiple users to send and receive text messgages from a centralized server. The application allows the following operations: 
-1. Check if an account exists: supply a unique username. If an account exists, you will be taken to login; otherwise you will be taken to account creation
-2. Create an account: supply a unique username, password, and text bio.
-3. Log in to an account
-**All passwords are encrypted! **
-4. List accounts: Users are able to see a list of existing accounts on the server. You can enter a search pattern in the text box below the "List Account" button to search for specific users; leaving the box blank will list all accounts instead.
-5. Send a message to a recipient: If the recipient is logged in, deliver immediately; if not the message will be stored and delivered once the recipient logs in and requests to see it.
-6. Read messages: If another user sends you a message when you are logged in, you will see it immediately. If you want to see messages sent while you were logged out, specify a number of messages to read in the text box below the "See new messages" button
-7. Read archived messages: You can see previously read messages by specifying a number in the text box below the "See older messages" button.
-8. Delete a message or set of messages: When on the GUI, to delete messages, type in the list of message ids you want to delete in the text box below the "Delete messages" button. Ids must be separated by commas. Ex: <5,6>. You can only delete messages you have received.
-9. Delete an account
-10. EXTRA FEATURE: "Find my nemesis" -- in honor of all the single people on Valentine's day, find the user you are most incompatible with based on your bios. It'll be hate at first text <3
+In this design exercise, we contain code and results for simulating time synchronization across logical clocks in distributed systems. Our repo allows you to:
+
+1. Spin up virtual "Machines" (gRPC servers) that simulating a real distributed system.
+    - Each Machine has its own logical clock
+    - Each Machine has its own incoming message queue
+    - Each Machine operates on its own "clock rate"
+    - Each Machine probabilistically decides an action: sending a message to its peers or an internal action
+    - Each Machine updates its logical clock upon receiving a message from a peer according to Lamport's rule: ```max(self.logical_clock, message.logical_clock) + 1```
+2. Run experiments in this simulation by adjusting variables in ```experiment_config.yaml```
+    - Primarily ```CYCLE_MAX```, which dictates clock rate, and ```PROB_MSG_A```,```PROB_MSG_B```,```PROB_MSG_C```, which dictates the probability of different Machine actions
+3. Log and parse experiment results to analyze system behavior and drift
+    - Every action is logged with key details like timestamp, logical clock time, and queue length
+    - Allows for visualization and analysis of how different loads and environments affect the performance of the simulated distributed system.
 
 ### Usage Instructions
 1. Download the repository
@@ -50,7 +51,3 @@ for each ```logs``` experiment folder
 - ```machine_0.csv```: experiment tabular data, parsed from logs (also exists for machine_1, machine_2)
 - ```clock_rates.json```: clock_rate for each machine
 - ```config.yaml```: auto-generated snapshot of experiment configs
-
-testing files
-
-**Protocols** 

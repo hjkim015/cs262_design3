@@ -28,15 +28,18 @@ def parse_machine_log(lines: list):
     for l in lines:
 
         # Get values
-        timestamp = TIMESTAMP_PATTERN.search(l).group(0)
-        operation = re.search(r"\[(\w+)\]", l).group(1)
-        logical_clock = int(re.search(r"Logical clock: (\d+)", l).group(1))
-        queue_length = 0
-        if operation == "RECEIVED":
-            queue_length = int(re.search(r"Queue length: (\d+)", l).group(1))
+        try:
+            timestamp = TIMESTAMP_PATTERN.search(l).group(0)
+            operation = re.search(r"\[(\w+)\]", l).group(1)
+            logical_clock = int(re.search(r"Logical clock: (\d+)", l).group(1))
+            queue_length = 0
+            if operation == "RECEIVED":
+                queue_length = int(re.search(r"Queue length: (\d+)", l).group(1))
     
-        # Append to the list of rows
-        row_list.append([timestamp,operation,logical_clock,queue_length])
+            # Append to the list of rows
+            row_list.append([timestamp,operation,logical_clock,queue_length])
+        except ValueError as e:
+            return e
     
     # Create a dataframe
     df = pd.DataFrame(row_list)

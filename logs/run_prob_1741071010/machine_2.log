@@ -1,0 +1,200 @@
+2025-03-04 01:50:10 - [INIT] with clock rate 4 and peers ['localhost:50050', 'localhost:50051'], [0, 1]
+2025-03-04 01:50:13 - [INTERNAL], Logical clock: 1
+2025-03-04 01:50:13 - [RECEIVED] from Machine 0, Logical clock: 2, Queue length: 0
+2025-03-04 01:50:13 - [INTERNAL], Logical clock: 3
+2025-03-04 01:50:13 - [RECEIVED] from Machine 1, Logical clock: 4, Queue length: 0
+2025-03-04 01:50:14 - [SENT] to Machine 0, Logical clock: 4
+2025-03-04 01:50:14 - [SENT] to Machine 1, Logical clock: 4
+2025-03-04 01:50:14 - [INTERNAL], Logical clock: 6
+2025-03-04 01:50:14 - [INTERNAL], Logical clock: 7
+2025-03-04 01:50:15 - [INTERNAL], Logical clock: 8
+2025-03-04 01:50:15 - [INTERNAL], Logical clock: 9
+2025-03-04 01:50:15 - [INTERNAL], Logical clock: 10
+2025-03-04 01:50:16 - [INTERNAL], Logical clock: 11
+2025-03-04 01:50:16 - [SENT] to Machine 0, Logical clock: 11
+2025-03-04 01:50:16 - [INTERNAL], Logical clock: 13
+2025-03-04 01:50:17 - [INTERNAL], Logical clock: 14
+2025-03-04 01:50:17 - [INTERNAL], Logical clock: 15
+2025-03-04 01:50:17 - [INTERNAL], Logical clock: 16
+2025-03-04 01:50:17 - [INTERNAL], Logical clock: 17
+2025-03-04 01:50:18 - [INTERNAL], Logical clock: 18
+2025-03-04 01:50:18 - [INTERNAL], Logical clock: 19
+2025-03-04 01:50:18 - [INTERNAL], Logical clock: 20
+2025-03-04 01:50:19 - [SENT] to Machine 1, Logical clock: 20
+2025-03-04 01:50:19 - [INTERNAL], Logical clock: 22
+2025-03-04 01:50:19 - [SENT] to Machine 0, Logical clock: 22
+2025-03-04 01:50:19 - [INTERNAL], Logical clock: 24
+2025-03-04 01:50:20 - [INTERNAL], Logical clock: 25
+2025-03-04 01:50:20 - [INTERNAL], Logical clock: 26
+2025-03-04 01:50:21 - [SENT] to Machine 1, Logical clock: 26
+2025-03-04 01:50:21 - [RECEIVED] from Machine 1, Logical clock: 28, Queue length: 1
+2025-03-04 01:50:21 - [RECEIVED] from Machine 1, Logical clock: 29, Queue length: 0
+2025-03-04 01:50:21 - [INTERNAL], Logical clock: 30
+2025-03-04 01:50:22 - [INTERNAL], Logical clock: 31
+2025-03-04 01:50:22 - [SENT] to Machine 0, Logical clock: 31
+2025-03-04 01:50:22 - [RECEIVED] from Machine 1, Logical clock: 33, Queue length: 0
+2025-03-04 01:50:23 - [INTERNAL], Logical clock: 34
+2025-03-04 01:50:23 - [INTERNAL], Logical clock: 35
+2025-03-04 01:50:23 - [SENT] to Machine 0, Logical clock: 35
+2025-03-04 01:50:24 - [INTERNAL], Logical clock: 37
+2025-03-04 01:50:24 - [SENT] to Machine 0, Logical clock: 37
+2025-03-04 01:50:24 - [INTERNAL], Logical clock: 39
+2025-03-04 01:50:24 - [INTERNAL], Logical clock: 40
+2025-03-04 01:50:25 - [INTERNAL], Logical clock: 41
+2025-03-04 01:50:25 - [SENT] to Machine 0, Logical clock: 41
+2025-03-04 01:50:25 - [SENT] to Machine 1, Logical clock: 41
+2025-03-04 01:50:25 - [INTERNAL], Logical clock: 43
+2025-03-04 01:50:26 - [INTERNAL], Logical clock: 44
+2025-03-04 01:50:26 - [INTERNAL], Logical clock: 45
+2025-03-04 01:50:26 - [INTERNAL], Logical clock: 46
+2025-03-04 01:50:26 - [INTERNAL], Logical clock: 47
+2025-03-04 01:50:27 - [INTERNAL], Logical clock: 48
+2025-03-04 01:50:27 - [INTERNAL], Logical clock: 49
+2025-03-04 01:50:27 - [INTERNAL], Logical clock: 50
+2025-03-04 01:50:28 - [RECEIVED] from Machine 0, Logical clock: 51, Queue length: 0
+2025-03-04 01:50:28 - [INTERNAL], Logical clock: 52
+2025-03-04 01:50:29 - [SENT] to Machine 0, Logical clock: 52
+2025-03-04 01:50:29 - [SENT] to Machine 0, Logical clock: 53
+2025-03-04 01:50:29 - [SENT] to Machine 1, Logical clock: 53
+2025-03-04 01:50:29 - [INTERNAL], Logical clock: 55
+2025-03-04 01:50:30 - [SENT] to Machine 0, Logical clock: 55
+2025-03-04 01:50:30 - [SENT] to Machine 0, Logical clock: 56
+2025-03-04 01:50:30 - [INTERNAL], Logical clock: 58
+2025-03-04 01:50:31 - [SENT] to Machine 0, Logical clock: 58
+2025-03-04 01:50:31 - [SENT] to Machine 0, Logical clock: 59
+2025-03-04 01:50:31 - [INTERNAL], Logical clock: 61
+2025-03-04 01:50:31 - [INTERNAL], Logical clock: 62
+2025-03-04 01:50:32 - [INTERNAL], Logical clock: 63
+2025-03-04 01:50:32 - [SENT] to Machine 0, Logical clock: 63
+2025-03-04 01:50:32 - [SENT] to Machine 1, Logical clock: 63
+2025-03-04 01:50:32 - [INTERNAL], Logical clock: 65
+2025-03-04 01:50:33 - [INTERNAL], Logical clock: 66
+2025-03-04 01:50:33 - [SENT] to Machine 0, Logical clock: 66
+2025-03-04 01:50:33 - [SENT] to Machine 0, Logical clock: 67
+2025-03-04 01:50:33 - [INTERNAL], Logical clock: 69
+2025-03-04 01:50:34 - [INTERNAL], Logical clock: 70
+2025-03-04 01:50:34 - [SENT] to Machine 0, Logical clock: 70
+2025-03-04 01:50:35 - [SENT] to Machine 1, Logical clock: 70
+2025-03-04 01:50:35 - [INTERNAL], Logical clock: 72
+2025-03-04 01:50:35 - [INTERNAL], Logical clock: 73
+2025-03-04 01:50:35 - [INTERNAL], Logical clock: 74
+2025-03-04 01:50:35 - [INTERNAL], Logical clock: 75
+2025-03-04 01:50:36 - [INTERNAL], Logical clock: 76
+2025-03-04 01:50:36 - [INTERNAL], Logical clock: 77
+2025-03-04 01:50:36 - [INTERNAL], Logical clock: 78
+2025-03-04 01:50:37 - [SENT] to Machine 1, Logical clock: 78
+2025-03-04 01:50:37 - [INTERNAL], Logical clock: 80
+2025-03-04 01:50:37 - [INTERNAL], Logical clock: 81
+2025-03-04 01:50:38 - [SENT] to Machine 0, Logical clock: 81
+2025-03-04 01:50:38 - [INTERNAL], Logical clock: 83
+2025-03-04 01:50:38 - [INTERNAL], Logical clock: 84
+2025-03-04 01:50:39 - [SENT] to Machine 0, Logical clock: 84
+2025-03-04 01:50:39 - [INTERNAL], Logical clock: 86
+2025-03-04 01:50:39 - [RECEIVED] from Machine 1, Logical clock: 87, Queue length: 0
+2025-03-04 01:50:39 - [RECEIVED] from Machine 1, Logical clock: 88, Queue length: 1
+2025-03-04 01:50:40 - [RECEIVED] from Machine 1, Logical clock: 89, Queue length: 3
+2025-03-04 01:50:40 - [RECEIVED] from Machine 1, Logical clock: 90, Queue length: 2
+2025-03-04 01:50:40 - [RECEIVED] from Machine 1, Logical clock: 91, Queue length: 1
+2025-03-04 01:50:40 - [RECEIVED] from Machine 1, Logical clock: 92, Queue length: 0
+2025-03-04 01:50:41 - [SENT] to Machine 0, Logical clock: 92
+2025-03-04 01:50:41 - [INTERNAL], Logical clock: 94
+2025-03-04 01:50:41 - [INTERNAL], Logical clock: 95
+2025-03-04 01:50:42 - [SENT] to Machine 1, Logical clock: 95
+2025-03-04 01:50:42 - [INTERNAL], Logical clock: 97
+2025-03-04 01:50:42 - [INTERNAL], Logical clock: 98
+2025-03-04 01:50:43 - [INTERNAL], Logical clock: 99
+2025-03-04 01:50:43 - [INTERNAL], Logical clock: 100
+2025-03-04 01:50:43 - [INTERNAL], Logical clock: 101
+2025-03-04 01:50:43 - [INTERNAL], Logical clock: 102
+2025-03-04 01:50:44 - [RECEIVED] from Machine 0, Logical clock: 103, Queue length: 1
+2025-03-04 01:50:44 - [RECEIVED] from Machine 0, Logical clock: 104, Queue length: 0
+2025-03-04 01:50:44 - [INTERNAL], Logical clock: 105
+2025-03-04 01:50:45 - [RECEIVED] from Machine 0, Logical clock: 106, Queue length: 1
+2025-03-04 01:50:45 - [RECEIVED] from Machine 0, Logical clock: 107, Queue length: 1
+2025-03-04 01:50:45 - [RECEIVED] from Machine 0, Logical clock: 108, Queue length: 0
+2025-03-04 01:50:46 - [SENT] to Machine 0, Logical clock: 108
+2025-03-04 01:50:46 - [SENT] to Machine 0, Logical clock: 109
+2025-03-04 01:50:46 - [SENT] to Machine 1, Logical clock: 109
+2025-03-04 01:50:46 - [RECEIVED] from Machine 0, Logical clock: 111, Queue length: 0
+2025-03-04 01:50:47 - [INTERNAL], Logical clock: 112
+2025-03-04 01:50:47 - [INTERNAL], Logical clock: 113
+2025-03-04 01:50:47 - [INTERNAL], Logical clock: 114
+2025-03-04 01:50:48 - [SENT] to Machine 0, Logical clock: 114
+2025-03-04 01:50:48 - [INTERNAL], Logical clock: 116
+2025-03-04 01:50:48 - [INTERNAL], Logical clock: 117
+2025-03-04 01:50:49 - [SENT] to Machine 0, Logical clock: 117
+2025-03-04 01:50:49 - [INTERNAL], Logical clock: 119
+2025-03-04 01:50:49 - [SENT] to Machine 0, Logical clock: 119
+2025-03-04 01:50:50 - [SENT] to Machine 1, Logical clock: 119
+2025-03-04 01:50:50 - [INTERNAL], Logical clock: 121
+2025-03-04 01:50:50 - [RECEIVED] from Machine 1, Logical clock: 122, Queue length: 1
+2025-03-04 01:50:50 - [RECEIVED] from Machine 1, Logical clock: 123, Queue length: 0
+2025-03-04 01:50:51 - [SENT] to Machine 1, Logical clock: 123
+2025-03-04 01:50:51 - [INTERNAL], Logical clock: 125
+2025-03-04 01:50:52 - [INTERNAL], Logical clock: 126
+2025-03-04 01:50:52 - [INTERNAL], Logical clock: 127
+2025-03-04 01:50:52 - [RECEIVED] from Machine 0, Logical clock: 128, Queue length: 1
+2025-03-04 01:50:52 - [RECEIVED] from Machine 1, Logical clock: 129, Queue length: 1
+2025-03-04 01:50:53 - [RECEIVED] from Machine 0, Logical clock: 130, Queue length: 0
+2025-03-04 01:50:53 - [SENT] to Machine 0, Logical clock: 130
+2025-03-04 01:50:54 - [SENT] to Machine 0, Logical clock: 131
+2025-03-04 01:50:54 - [SENT] to Machine 1, Logical clock: 131
+2025-03-04 01:50:54 - [INTERNAL], Logical clock: 133
+2025-03-04 01:50:54 - [INTERNAL], Logical clock: 134
+2025-03-04 01:50:55 - [INTERNAL], Logical clock: 135
+2025-03-04 01:50:55 - [INTERNAL], Logical clock: 136
+2025-03-04 01:50:55 - [SENT] to Machine 0, Logical clock: 136
+2025-03-04 01:50:55 - [INTERNAL], Logical clock: 138
+2025-03-04 01:50:56 - [INTERNAL], Logical clock: 139
+2025-03-04 01:50:56 - [INTERNAL], Logical clock: 140
+2025-03-04 01:50:56 - [RECEIVED] from Machine 1, Logical clock: 141, Queue length: 1
+2025-03-04 01:50:57 - [RECEIVED] from Machine 1, Logical clock: 142, Queue length: 0
+2025-03-04 01:50:57 - [SENT] to Machine 1, Logical clock: 142
+2025-03-04 01:50:58 - [SENT] to Machine 0, Logical clock: 143
+2025-03-04 01:50:58 - [INTERNAL], Logical clock: 145
+2025-03-04 01:50:58 - [SENT] to Machine 0, Logical clock: 145
+2025-03-04 01:50:58 - [SENT] to Machine 1, Logical clock: 145
+2025-03-04 01:50:58 - [INTERNAL], Logical clock: 147
+2025-03-04 01:50:59 - [INTERNAL], Logical clock: 148
+2025-03-04 01:50:59 - [SENT] to Machine 0, Logical clock: 148
+2025-03-04 01:50:59 - [SENT] to Machine 1, Logical clock: 148
+2025-03-04 01:51:00 - [SENT] to Machine 0, Logical clock: 149
+2025-03-04 01:51:00 - [SENT] to Machine 0, Logical clock: 150
+2025-03-04 01:51:00 - [SENT] to Machine 1, Logical clock: 150
+2025-03-04 01:51:00 - [INTERNAL], Logical clock: 152
+2025-03-04 01:51:00 - [INTERNAL], Logical clock: 153
+2025-03-04 01:51:01 - [INTERNAL], Logical clock: 154
+2025-03-04 01:51:01 - [INTERNAL], Logical clock: 155
+2025-03-04 01:51:01 - [INTERNAL], Logical clock: 156
+2025-03-04 01:51:02 - [INTERNAL], Logical clock: 157
+2025-03-04 01:51:02 - [INTERNAL], Logical clock: 158
+2025-03-04 01:51:02 - [INTERNAL], Logical clock: 159
+2025-03-04 01:51:03 - [SENT] to Machine 0, Logical clock: 159
+2025-03-04 01:51:03 - [SENT] to Machine 1, Logical clock: 159
+2025-03-04 01:51:03 - [RECEIVED] from Machine 1, Logical clock: 161, Queue length: 0
+2025-03-04 01:51:03 - [RECEIVED] from Machine 1, Logical clock: 162, Queue length: 1
+2025-03-04 01:51:04 - [RECEIVED] from Machine 1, Logical clock: 163, Queue length: 0
+2025-03-04 01:51:04 - [INTERNAL], Logical clock: 164
+2025-03-04 01:51:04 - [INTERNAL], Logical clock: 165
+2025-03-04 01:51:04 - [RECEIVED] from Machine 1, Logical clock: 166, Queue length: 1
+2025-03-04 01:51:05 - [RECEIVED] from Machine 1, Logical clock: 167, Queue length: 0
+2025-03-04 01:51:05 - [SENT] to Machine 1, Logical clock: 167
+2025-03-04 01:51:06 - [SENT] to Machine 0, Logical clock: 168
+2025-03-04 01:51:06 - [SENT] to Machine 0, Logical clock: 169
+2025-03-04 01:51:06 - [SENT] to Machine 0, Logical clock: 170
+2025-03-04 01:51:07 - [SENT] to Machine 0, Logical clock: 171
+2025-03-04 01:51:07 - [SENT] to Machine 1, Logical clock: 171
+2025-03-04 01:51:07 - [INTERNAL], Logical clock: 173
+2025-03-04 01:51:07 - [INTERNAL], Logical clock: 174
+2025-03-04 01:51:07 - [INTERNAL], Logical clock: 175
+2025-03-04 01:51:08 - [INTERNAL], Logical clock: 176
+2025-03-04 01:51:08 - [SENT] to Machine 1, Logical clock: 176
+2025-03-04 01:51:08 - [INTERNAL], Logical clock: 178
+2025-03-04 01:51:08 - [INTERNAL], Logical clock: 179
+2025-03-04 01:51:09 - [INTERNAL], Logical clock: 180
+2025-03-04 01:51:09 - [INTERNAL], Logical clock: 181
+2025-03-04 01:51:10 - [SENT] to Machine 0, Logical clock: 181
+2025-03-04 01:51:10 - [RECEIVED] from Machine 1, Logical clock: 183, Queue length: 0
+2025-03-04 01:51:10 - [SENT] to Machine 1, Logical clock: 183
+2025-03-04 01:51:11 - [SENT] to Machine 1, Logical clock: 184
+2025-03-04 01:51:11 - [INTERNAL], Logical clock: 186

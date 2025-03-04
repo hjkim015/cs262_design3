@@ -1,0 +1,298 @@
+2025-03-03 23:11:03 - [INIT] with clock rate 2 and peers ['localhost:50050', 'localhost:50052'], [0, 2]
+2025-03-03 23:11:05 - [INTERNAL], Logical clock: 1
+2025-03-03 23:11:05 - Received message, logical_clock: 1
+
+2025-03-03 23:11:05 - [INTERNAL], Logical clock: 2
+2025-03-03 23:11:06 - [INTERNAL], Logical clock: 3
+2025-03-03 23:11:06 - Received message, logical_clock: 6
+
+2025-03-03 23:11:06 - Received message, logical_clock: 7
+
+2025-03-03 23:11:06 - [INTERNAL], Logical clock: 4
+2025-03-03 23:11:06 - Received message, logical_clock: 8
+
+2025-03-03 23:11:07 - [RECEIVED] from Machine 0, Logical clock: 9, Queue length: 0
+2025-03-03 23:11:07 - Received message, logical_clock: 11
+
+2025-03-03 23:11:07 - Received message, logical_clock: 12
+
+2025-03-03 23:11:07 - [RECEIVED] from Machine 0, Logical clock: 10, Queue length: 0
+2025-03-03 23:11:07 - Received message, logical_clock: 13
+
+2025-03-03 23:11:08 - Received message, sender_id: 2
+logical_clock: 7
+
+2025-03-03 23:11:08 - Received message, logical_clock: 15
+
+2025-03-03 23:11:08 - [SENT] to Machine 0, Logical clock: 10
+2025-03-03 23:11:08 - Received message, logical_clock: 17
+
+2025-03-03 23:11:08 - [RECEIVED] from Machine 2, Logical clock: 12, Queue length: 0
+2025-03-03 23:11:09 - Received message, sender_id: 2
+logical_clock: 8
+
+2025-03-03 23:11:09 - [SENT] to Machine 0, Logical clock: 12
+2025-03-03 23:11:09 - Received message, logical_clock: 22
+
+2025-03-03 23:11:09 - [RECEIVED] from Machine 0, Logical clock: 18, Queue length: 3
+2025-03-03 23:11:09 - Received message, logical_clock: 23
+
+2025-03-03 23:11:10 - [INTERNAL], Logical clock: 19
+2025-03-03 23:11:10 - [RECEIVED] from Machine 1, Logical clock: 20, Queue length: 0
+2025-03-03 23:11:10 - Received message, logical_clock: 28
+
+2025-03-03 23:11:11 - Received message, logical_clock: 30
+
+2025-03-03 23:11:11 - [SENT] to Machine 0, Logical clock: 20
+2025-03-03 23:11:11 - Received message, logical_clock: 32
+
+2025-03-03 23:11:11 - [SENT] to Machine 2, Logical clock: 21
+2025-03-03 23:11:12 - Received message, sender_id: 2
+logical_clock: 17
+
+2025-03-03 23:11:12 - Received message, logical_clock: 35
+
+2025-03-03 23:11:12 - [SENT] to Machine 0, Logical clock: 22
+2025-03-03 23:11:12 - Received message, logical_clock: 36
+
+2025-03-03 23:11:12 - [RECEIVED] from Machine 0, Logical clock: 29, Queue length: 1
+2025-03-03 23:11:12 - Received message, logical_clock: 39
+
+2025-03-03 23:11:13 - [RECEIVED] from Machine 2, Logical clock: 30, Queue length: 2
+2025-03-03 23:11:13 - Received message, logical_clock: 41
+
+2025-03-03 23:11:13 - [SENT] to Machine 0, Logical clock: 30
+2025-03-03 23:11:13 - [SENT] to Machine 2, Logical clock: 30
+2025-03-03 23:11:14 - [SENT] to Machine 0, Logical clock: 31
+2025-03-03 23:11:14 - Received message, logical_clock: 45
+
+2025-03-03 23:11:14 - [SENT] to Machine 0, Logical clock: 32
+2025-03-03 23:11:15 - [RECEIVED] from Machine 0, Logical clock: 37, Queue length: 0
+2025-03-03 23:11:15 - Received message, logical_clock: 52
+
+2025-03-03 23:11:15 - [SENT] to Machine 0, Logical clock: 37
+2025-03-03 23:11:16 - [SENT] to Machine 0, Logical clock: 38
+2025-03-03 23:11:16 - Received message, logical_clock: 56
+
+2025-03-03 23:11:16 - [RECEIVED] from Machine 1, Logical clock: 40, Queue length: 0
+2025-03-03 23:11:16 - Received message, logical_clock: 59
+
+2025-03-03 23:11:17 - [SENT] to Machine 2, Logical clock: 40
+2025-03-03 23:11:17 - [SENT] to Machine 0, Logical clock: 41
+2025-03-03 23:11:17 - Received message, logical_clock: 64
+
+2025-03-03 23:11:18 - [RECEIVED] from Machine 0, Logical clock: 43, Queue length: 1
+2025-03-03 23:11:18 - [SENT] to Machine 0, Logical clock: 43
+2025-03-03 23:11:18 - [SENT] to Machine 2, Logical clock: 43
+2025-03-03 23:11:19 - [SENT] to Machine 0, Logical clock: 44
+2025-03-03 23:11:19 - Received message, logical_clock: 71
+
+2025-03-03 23:11:19 - Received message, logical_clock: 72
+
+2025-03-03 23:11:19 - [SENT] to Machine 0, Logical clock: 45
+2025-03-03 23:11:19 - [SENT] to Machine 2, Logical clock: 45
+2025-03-03 23:11:19 - Received message, logical_clock: 74
+
+2025-03-03 23:11:20 - [INTERNAL], Logical clock: 47
+2025-03-03 23:11:20 - Received message, logical_clock: 76
+
+2025-03-03 23:11:20 - [RECEIVED] from Machine 0, Logical clock: 75, Queue length: 0
+2025-03-03 23:11:20 - Received message, logical_clock: 78
+
+2025-03-03 23:11:21 - [RECEIVED] from Machine 0, Logical clock: 77, Queue length: 2
+2025-03-03 23:11:21 - [SENT] to Machine 0, Logical clock: 77
+2025-03-03 23:11:21 - Received message, logical_clock: 84
+
+2025-03-03 23:11:22 - Received message, sender_id: 2
+logical_clock: 73
+
+2025-03-03 23:11:22 - [SENT] to Machine 0, Logical clock: 78
+2025-03-03 23:11:22 - [RECEIVED] from Machine 2, Logical clock: 80, Queue length: 0
+2025-03-03 23:11:22 - Received message, logical_clock: 89
+
+2025-03-03 23:11:23 - [SENT] to Machine 0, Logical clock: 80
+2025-03-03 23:11:23 - Received message, logical_clock: 91
+
+2025-03-03 23:11:23 - [RECEIVED] from Machine 1, Logical clock: 82, Queue length: 0
+2025-03-03 23:11:23 - Received message, logical_clock: 93
+
+2025-03-03 23:11:23 - Received message, logical_clock: 94
+
+2025-03-03 23:11:24 - [INTERNAL], Logical clock: 83
+2025-03-03 23:11:24 - Received message, logical_clock: 95
+
+2025-03-03 23:11:24 - Received message, logical_clock: 97
+
+2025-03-03 23:11:24 - [RECEIVED] from Machine 1, Logical clock: 84, Queue length: 1
+2025-03-03 23:11:24 - Received message, logical_clock: 99
+
+2025-03-03 23:11:25 - [SENT] to Machine 0, Logical clock: 84
+2025-03-03 23:11:25 - [INTERNAL], Logical clock: 86
+2025-03-03 23:11:26 - [RECEIVED] from Machine 0, Logical clock: 105, Queue length: 0
+2025-03-03 23:11:26 - Received message, logical_clock: 106
+
+2025-03-03 23:11:26 - Received message, logical_clock: 107
+
+2025-03-03 23:11:26 - [SENT] to Machine 0, Logical clock: 105
+2025-03-03 23:11:27 - [RECEIVED] from Machine 1, Logical clock: 107, Queue length: 1
+2025-03-03 23:11:27 - Received message, logical_clock: 110
+
+2025-03-03 23:11:27 - Received message, logical_clock: 111
+
+2025-03-03 23:11:27 - Received message, logical_clock: 112
+
+2025-03-03 23:11:27 - [RECEIVED] from Machine 0, Logical clock: 111, Queue length: 2
+2025-03-03 23:11:27 - Received message, logical_clock: 114
+
+2025-03-03 23:11:28 - [RECEIVED] from Machine 0, Logical clock: 112, Queue length: 0
+2025-03-03 23:11:28 - [SENT] to Machine 0, Logical clock: 112
+2025-03-03 23:11:28 - Received message, logical_clock: 119
+
+2025-03-03 23:11:29 - [INTERNAL], Logical clock: 114
+2025-03-03 23:11:29 - Received message, logical_clock: 121
+
+2025-03-03 23:11:29 - [SENT] to Machine 0, Logical clock: 114
+2025-03-03 23:11:29 - [SENT] to Machine 2, Logical clock: 114
+2025-03-03 23:11:30 - [RECEIVED] from Machine 0, Logical clock: 122, Queue length: 0
+2025-03-03 23:11:30 - Received message, logical_clock: 125
+
+2025-03-03 23:11:30 - [RECEIVED] from Machine 1, Logical clock: 123, Queue length: 0
+2025-03-03 23:11:30 - Received message, logical_clock: 128
+
+2025-03-03 23:11:31 - Received message, sender_id: 2
+logical_clock: 113
+
+2025-03-03 23:11:31 - [RECEIVED] from Machine 2, Logical clock: 124, Queue length: 0
+2025-03-03 23:11:31 - Received message, logical_clock: 130
+
+2025-03-03 23:11:31 - Received message, logical_clock: 131
+
+2025-03-03 23:11:31 - Received message, logical_clock: 132
+
+2025-03-03 23:11:31 - [RECEIVED] from Machine 0, Logical clock: 133, Queue length: 0
+2025-03-03 23:11:32 - [RECEIVED] from Machine 0, Logical clock: 134, Queue length: 0
+2025-03-03 23:11:32 - Received message, logical_clock: 135
+
+2025-03-03 23:11:32 - Received message, logical_clock: 136
+
+2025-03-03 23:11:32 - Received message, logical_clock: 137
+
+2025-03-03 23:11:32 - [SENT] to Machine 0, Logical clock: 134
+2025-03-03 23:11:33 - [RECEIVED] from Machine 0, Logical clock: 138, Queue length: 1
+2025-03-03 23:11:33 - Received message, logical_clock: 141
+
+2025-03-03 23:11:33 - [RECEIVED] from Machine 0, Logical clock: 139, Queue length: 0
+2025-03-03 23:11:34 - [RECEIVED] from Machine 0, Logical clock: 140, Queue length: 0
+2025-03-03 23:11:34 - Received message, logical_clock: 146
+
+2025-03-03 23:11:34 - [RECEIVED] from Machine 0, Logical clock: 142, Queue length: 3
+2025-03-03 23:11:35 - [RECEIVED] from Machine 0, Logical clock: 147, Queue length: 0
+2025-03-03 23:11:35 - Received message, logical_clock: 152
+
+2025-03-03 23:11:35 - [INTERNAL], Logical clock: 148
+2025-03-03 23:11:35 - Received message, logical_clock: 154
+
+2025-03-03 23:11:36 - [INTERNAL], Logical clock: 149
+2025-03-03 23:11:36 - Received message, logical_clock: 155
+
+2025-03-03 23:11:36 - Received message, logical_clock: 157
+
+2025-03-03 23:11:36 - [SENT] to Machine 0, Logical clock: 149
+2025-03-03 23:11:37 - Received message, sender_id: 2
+logical_clock: 143
+
+2025-03-03 23:11:37 - [INTERNAL], Logical clock: 151
+2025-03-03 23:11:37 - [SENT] to Machine 0, Logical clock: 151
+2025-03-03 23:11:37 - Received message, logical_clock: 164
+
+2025-03-03 23:11:38 - [SENT] to Machine 0, Logical clock: 152
+2025-03-03 23:11:38 - Received message, logical_clock: 167
+
+2025-03-03 23:11:38 - [SENT] to Machine 2, Logical clock: 153
+2025-03-03 23:11:39 - [INTERNAL], Logical clock: 155
+2025-03-03 23:11:39 - Received message, logical_clock: 172
+
+2025-03-03 23:11:39 - [SENT] to Machine 2, Logical clock: 155
+2025-03-03 23:11:40 - [RECEIVED] from Machine 1, Logical clock: 157, Queue length: 3
+2025-03-03 23:11:40 - [INTERNAL], Logical clock: 158
+2025-03-03 23:11:40 - Received message, logical_clock: 178
+
+2025-03-03 23:11:41 - [INTERNAL], Logical clock: 159
+2025-03-03 23:11:41 - Received message, logical_clock: 182
+
+2025-03-03 23:11:41 - [SENT] to Machine 0, Logical clock: 159
+2025-03-03 23:11:42 - [SENT] to Machine 0, Logical clock: 160
+2025-03-03 23:11:42 - [SENT] to Machine 2, Logical clock: 160
+2025-03-03 23:11:42 - [RECEIVED] from Machine 1, Logical clock: 162, Queue length: 0
+2025-03-03 23:11:42 - Received message, logical_clock: 189
+
+2025-03-03 23:11:43 - [RECEIVED] from Machine 0, Logical clock: 183, Queue length: 0
+2025-03-03 23:11:43 - Received message, logical_clock: 190
+
+2025-03-03 23:11:43 - [SENT] to Machine 2, Logical clock: 183
+2025-03-03 23:11:44 - [RECEIVED] from Machine 0, Logical clock: 195, Queue length: 0
+2025-03-03 23:11:44 - Received message, logical_clock: 196
+
+2025-03-03 23:11:44 - [RECEIVED] from Machine 2, Logical clock: 196, Queue length: 0
+2025-03-03 23:11:45 - [SENT] to Machine 0, Logical clock: 196
+2025-03-03 23:11:45 - Received message, logical_clock: 201
+
+2025-03-03 23:11:45 - Received message, logical_clock: 202
+
+2025-03-03 23:11:45 - [RECEIVED] from Machine 2, Logical clock: 198, Queue length: 1
+2025-03-03 23:11:46 - [SENT] to Machine 0, Logical clock: 198
+2025-03-03 23:11:46 - [INTERNAL], Logical clock: 200
+2025-03-03 23:11:47 - [SENT] to Machine 0, Logical clock: 200
+2025-03-03 23:11:47 - Received message, logical_clock: 210
+
+2025-03-03 23:11:47 - [SENT] to Machine 0, Logical clock: 201
+2025-03-03 23:11:47 - Received message, logical_clock: 213
+
+2025-03-03 23:11:48 - [SENT] to Machine 0, Logical clock: 202
+2025-03-03 23:11:48 - [SENT] to Machine 2, Logical clock: 202
+2025-03-03 23:11:48 - [SENT] to Machine 0, Logical clock: 203
+2025-03-03 23:11:49 - [INTERNAL], Logical clock: 205
+2025-03-03 23:11:49 - Received message, logical_clock: 220
+
+2025-03-03 23:11:49 - Received message, logical_clock: 222
+
+2025-03-03 23:11:49 - [INTERNAL], Logical clock: 206
+2025-03-03 23:11:50 - Received message, logical_clock: 224
+
+2025-03-03 23:11:50 - [RECEIVED] from Machine 1, Logical clock: 207, Queue length: 0
+2025-03-03 23:11:50 - Received message, logical_clock: 225
+
+2025-03-03 23:11:50 - Received message, logical_clock: 227
+
+2025-03-03 23:11:50 - [RECEIVED] from Machine 0, Logical clock: 225, Queue length: 0
+2025-03-03 23:11:50 - Received message, logical_clock: 228
+
+2025-03-03 23:11:51 - [RECEIVED] from Machine 0, Logical clock: 226, Queue length: 0
+2025-03-03 23:11:51 - [SENT] to Machine 0, Logical clock: 226
+2025-03-03 23:11:52 - Received message, logical_clock: 234
+
+2025-03-03 23:11:52 - Received message, sender_id: 2
+logical_clock: 229
+
+2025-03-03 23:11:52 - [RECEIVED] from Machine 2, Logical clock: 230, Queue length: 1
+2025-03-03 23:11:52 - [RECEIVED] from Machine 2, Logical clock: 231, Queue length: 0
+2025-03-03 23:11:53 - Received message, logical_clock: 239
+
+2025-03-03 23:11:53 - [SENT] to Machine 0, Logical clock: 231
+2025-03-03 23:11:53 - Received message, logical_clock: 241
+
+2025-03-03 23:11:53 - Received message, logical_clock: 242
+
+2025-03-03 23:11:53 - [RECEIVED] from Machine 0, Logical clock: 240, Queue length: 1
+2025-03-03 23:11:53 - Received message, logical_clock: 243
+
+2025-03-03 23:11:54 - Received message, logical_clock: 244
+
+2025-03-03 23:11:54 - [RECEIVED] from Machine 1, Logical clock: 241, Queue length: 0
+2025-03-03 23:11:54 - Received message, logical_clock: 245
+
+2025-03-03 23:11:54 - Received message, logical_clock: 246
+
+2025-03-03 23:11:54 - [INTERNAL], Logical clock: 242
+2025-03-03 23:11:55 - [RECEIVED] from Machine 0, Logical clock: 247, Queue length: 5
+2025-03-03 23:11:55 - [RECEIVED] from Machine 0, Logical clock: 248, Queue length: 4

@@ -15,7 +15,7 @@ from google.protobuf import empty_pb2
 import sys
 
 class Machine(system_pb2_grpc.PeerServiceServicer):
-    def __init__(self, machine_id, port, clock_rate, peers, log_path=None):
+    def __init__(self, machine_id, port, clock_rate, peers, peers_id, log_path=None):
         """Initialize the machine."""
         # Initialize the logical clock
         self.logical_clock = 0
@@ -25,6 +25,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         # Initialize the machine ID, peer addresses, and message queue
         self.machine_id = machine_id
         self.peers = peers # list of peer addresses
+        self.peers_id = peers_id
         self.port = port
         self._channels = [] # list of channels to peers
         self._stubs = [] # list of stubs to peers
@@ -33,6 +34,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         self._stop_event = threading.Event()
         
         self.running = False
+        self.last_sent_message = None
 
         # Initialize the logger
         if not os.path.exists(log_path):
@@ -43,7 +45,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
         self.logger.addHandler(handler)   
         # Write first log message
-        self.logger.info(f"[INIT] with clock rate {self.clock_rate} and peers {self.peers}") 
+        self.logger.info(f"[INIT] with clock rate {self.clock_rate} and peers {self.peers}, {self.peers_id}") 
 
     def SendMessage(self, request, context):
         """Receive a message (unary) from a peer and enqueue it."""
@@ -54,8 +56,10 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         """Stream messages to a peer from this machine's queue."""
         while not self._stop_event.is_set():
             try:
-                msg = self.message_queue.get(timeout=1)
-                yield msg
+                if self.last_sent_message is not None:
+                    msg = self.last_sent_message
+                    self.last_sent_message = None
+                    yield msg
             except queue.Empty:
                 pass
 
@@ -137,6 +141,8 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
             stub = self._stubs[target]
             msg = system_pb2.Message(sender_id=self.machine_id, logical_clock=self.logical_clock)
             stub.SendMessage(msg)
+            self.logger.info(f"[SENT] to Machine {self.peers_id[target]}, Logical clock: {self.logical_clock}")
+            self.last_sent_message = msg
         except grpc.RpcError as e:
             self.logger.error(f"{e}")
 

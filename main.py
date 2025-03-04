@@ -33,10 +33,12 @@ if __name__ == "__main__":
             clock_rate = random.randint(1, CYCLE_MAX)  # Random clock ticks per second
             # TODO rm self from peer addresses, make peers just int not localhost etc
             peers = []
+            peers_id = []
             for j in range(N_MACHINES):
                 if j != i:
                     peers.append(f"localhost:{BASE_PORT + j}")
-            m = Machine(i, my_port, clock_rate, peers, log_path=log_folder)
+                    peers_id.append(j)
+            m = Machine(i, my_port, clock_rate, peers, peers_id, log_path=log_folder)
             machines.append(m)
 
         threads = []

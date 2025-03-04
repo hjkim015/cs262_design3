@@ -1,0 +1,579 @@
+2025-03-03 23:13:48 - [INIT] with clock rate 6 and peers ['localhost:50050', 'localhost:50051'], [0, 1]
+2025-03-03 23:13:50 - [SENT] to Machine 0, Logical clock: 0
+2025-03-03 23:13:50 - [SENT] to Machine 0, Logical clock: 1
+2025-03-03 23:13:50 - [SENT] to Machine 0, Logical clock: 2
+2025-03-03 23:13:50 - [INTERNAL], Logical clock: 4
+2025-03-03 23:13:50 - my queue: logical_clock: 3
+
+2025-03-03 23:13:50 - [INTERNAL], Logical clock: 5
+2025-03-03 23:13:51 - [SENT] to Machine 0, Logical clock: 5
+2025-03-03 23:13:51 - [SENT] to Machine 1, Logical clock: 5
+2025-03-03 23:13:51 - [INTERNAL], Logical clock: 7
+2025-03-03 23:13:51 - [INTERNAL], Logical clock: 8
+2025-03-03 23:13:51 - my queue: logical_clock: 6
+
+2025-03-03 23:13:51 - [SENT] to Machine 0, Logical clock: 8
+2025-03-03 23:13:51 - [SENT] to Machine 1, Logical clock: 8
+2025-03-03 23:13:51 - my queue: logical_clock: 7
+
+2025-03-03 23:13:51 - [SENT] to Machine 0, Logical clock: 9
+2025-03-03 23:13:51 - [SENT] to Machine 0, Logical clock: 10
+2025-03-03 23:13:51 - [SENT] to Machine 1, Logical clock: 10
+2025-03-03 23:13:52 - [INTERNAL], Logical clock: 12
+2025-03-03 23:13:52 - my queue: sender_id: 1
+logical_clock: 4
+
+2025-03-03 23:13:52 - [SENT] to Machine 0, Logical clock: 12
+2025-03-03 23:13:52 - [SENT] to Machine 1, Logical clock: 12
+2025-03-03 23:13:52 - [SENT] to Machine 0, Logical clock: 13
+2025-03-03 23:13:52 - [SENT] to Machine 0, Logical clock: 14
+2025-03-03 23:13:52 - [INTERNAL], Logical clock: 16
+2025-03-03 23:13:52 - [INTERNAL], Logical clock: 17
+2025-03-03 23:13:53 - [SENT] to Machine 1, Logical clock: 17
+2025-03-03 23:13:53 - my queue: sender_id: 1
+logical_clock: 6
+
+2025-03-03 23:13:53 - [SENT] to Machine 1, Logical clock: 18
+2025-03-03 23:13:53 - [SENT] to Machine 0, Logical clock: 19
+2025-03-03 23:13:53 - [INTERNAL], Logical clock: 21
+2025-03-03 23:13:53 - [SENT] to Machine 0, Logical clock: 21
+2025-03-03 23:13:53 - [SENT] to Machine 1, Logical clock: 21
+2025-03-03 23:13:53 - [SENT] to Machine 0, Logical clock: 22
+2025-03-03 23:13:53 - [SENT] to Machine 1, Logical clock: 22
+2025-03-03 23:13:54 - [SENT] to Machine 0, Logical clock: 23
+2025-03-03 23:13:54 - [INTERNAL], Logical clock: 25
+2025-03-03 23:13:54 - [SENT] to Machine 0, Logical clock: 25
+2025-03-03 23:13:54 - [SENT] to Machine 0, Logical clock: 26
+2025-03-03 23:13:54 - [INTERNAL], Logical clock: 28
+2025-03-03 23:13:54 - my queue: logical_clock: 23
+
+2025-03-03 23:13:55 - [SENT] to Machine 1, Logical clock: 28
+2025-03-03 23:13:55 - [INTERNAL], Logical clock: 30
+2025-03-03 23:13:55 - my queue: sender_id: 1
+logical_clock: 10
+
+2025-03-03 23:13:55 - [INTERNAL], Logical clock: 31
+2025-03-03 23:13:55 - [INTERNAL], Logical clock: 32
+2025-03-03 23:13:55 - [SENT] to Machine 0, Logical clock: 32
+2025-03-03 23:13:55 - my queue: sender_id: 1
+logical_clock: 11
+
+2025-03-03 23:13:55 - [INTERNAL], Logical clock: 34
+2025-03-03 23:13:56 - [SENT] to Machine 1, Logical clock: 34
+2025-03-03 23:13:56 - [SENT] to Machine 0, Logical clock: 35
+2025-03-03 23:13:56 - my queue: logical_clock: 30
+
+2025-03-03 23:13:56 - [SENT] to Machine 0, Logical clock: 36
+2025-03-03 23:13:56 - [SENT] to Machine 1, Logical clock: 37
+2025-03-03 23:13:56 - [INTERNAL], Logical clock: 39
+2025-03-03 23:13:56 - my queue: logical_clock: 32
+
+2025-03-03 23:13:56 - [SENT] to Machine 0, Logical clock: 39
+2025-03-03 23:13:57 - [SENT] to Machine 0, Logical clock: 40
+2025-03-03 23:13:57 - [SENT] to Machine 0, Logical clock: 41
+2025-03-03 23:13:57 - [INTERNAL], Logical clock: 43
+2025-03-03 23:13:57 - [SENT] to Machine 0, Logical clock: 43
+2025-03-03 23:13:57 - [SENT] to Machine 1, Logical clock: 43
+2025-03-03 23:13:57 - [SENT] to Machine 1, Logical clock: 44
+2025-03-03 23:13:57 - my queue: sender_id: 1
+logical_clock: 15
+
+2025-03-03 23:13:57 - [INTERNAL], Logical clock: 46
+2025-03-03 23:13:58 - [SENT] to Machine 0, Logical clock: 46
+2025-03-03 23:13:58 - [SENT] to Machine 0, Logical clock: 47
+2025-03-03 23:13:58 - [SENT] to Machine 1, Logical clock: 47
+2025-03-03 23:13:58 - my queue: logical_clock: 40
+
+2025-03-03 23:13:58 - [SENT] to Machine 0, Logical clock: 48
+2025-03-03 23:13:58 - [SENT] to Machine 1, Logical clock: 48
+2025-03-03 23:13:58 - [SENT] to Machine 0, Logical clock: 49
+2025-03-03 23:13:58 - [INTERNAL], Logical clock: 51
+2025-03-03 23:13:58 - my queue: sender_id: 1
+logical_clock: 17
+
+2025-03-03 23:13:58 - [SENT] to Machine 0, Logical clock: 51
+2025-03-03 23:13:59 - [INTERNAL], Logical clock: 53
+2025-03-03 23:13:59 - my queue: logical_clock: 44
+
+2025-03-03 23:13:59 - [INTERNAL], Logical clock: 54
+2025-03-03 23:13:59 - [INTERNAL], Logical clock: 55
+2025-03-03 23:13:59 - [INTERNAL], Logical clock: 56
+2025-03-03 23:13:59 - [SENT] to Machine 1, Logical clock: 56
+2025-03-03 23:13:59 - [SENT] to Machine 1, Logical clock: 57
+2025-03-03 23:13:59 - my queue: logical_clock: 48
+
+2025-03-03 23:14:00 - [SENT] to Machine 0, Logical clock: 58
+2025-03-03 23:14:00 - [SENT] to Machine 0, Logical clock: 59
+2025-03-03 23:14:00 - [SENT] to Machine 0, Logical clock: 60
+2025-03-03 23:14:00 - [SENT] to Machine 1, Logical clock: 60
+2025-03-03 23:14:00 - [SENT] to Machine 0, Logical clock: 61
+2025-03-03 23:14:00 - [SENT] to Machine 0, Logical clock: 62
+2025-03-03 23:14:00 - my queue: sender_id: 1
+logical_clock: 21
+
+2025-03-03 23:14:00 - my queue: logical_clock: 52
+
+2025-03-03 23:14:00 - [SENT] to Machine 0, Logical clock: 63
+2025-03-03 23:14:01 - [INTERNAL], Logical clock: 65
+2025-03-03 23:14:01 - my queue: logical_clock: 54
+
+2025-03-03 23:14:01 - [SENT] to Machine 1, Logical clock: 65
+2025-03-03 23:14:01 - [SENT] to Machine 0, Logical clock: 66
+2025-03-03 23:14:01 - [INTERNAL], Logical clock: 68
+2025-03-03 23:14:01 - [SENT] to Machine 0, Logical clock: 68
+2025-03-03 23:14:01 - [INTERNAL], Logical clock: 70
+2025-03-03 23:14:02 - my queue: logical_clock: 58
+
+2025-03-03 23:14:02 - [SENT] to Machine 0, Logical clock: 70
+2025-03-03 23:14:02 - [SENT] to Machine 0, Logical clock: 71
+2025-03-03 23:14:02 - my queue: logical_clock: 60
+
+2025-03-03 23:14:02 - [INTERNAL], Logical clock: 73
+2025-03-03 23:14:02 - my queue: logical_clock: 61
+
+2025-03-03 23:14:02 - [SENT] to Machine 1, Logical clock: 73
+2025-03-03 23:14:02 - [SENT] to Machine 0, Logical clock: 74
+2025-03-03 23:14:02 - [SENT] to Machine 1, Logical clock: 74
+2025-03-03 23:14:03 - [INTERNAL], Logical clock: 76
+2025-03-03 23:14:03 - [SENT] to Machine 0, Logical clock: 76
+2025-03-03 23:14:03 - my queue: sender_id: 1
+logical_clock: 26
+
+2025-03-03 23:14:03 - [SENT] to Machine 0, Logical clock: 77
+2025-03-03 23:14:03 - [INTERNAL], Logical clock: 79
+2025-03-03 23:14:03 - [INTERNAL], Logical clock: 80
+2025-03-03 23:14:03 - my queue: sender_id: 1
+logical_clock: 27
+
+2025-03-03 23:14:03 - [INTERNAL], Logical clock: 81
+2025-03-03 23:14:04 - [SENT] to Machine 0, Logical clock: 81
+2025-03-03 23:14:04 - [SENT] to Machine 0, Logical clock: 82
+2025-03-03 23:14:04 - [SENT] to Machine 0, Logical clock: 83
+2025-03-03 23:14:04 - [SENT] to Machine 0, Logical clock: 84
+2025-03-03 23:14:04 - [SENT] to Machine 0, Logical clock: 85
+2025-03-03 23:14:04 - [SENT] to Machine 0, Logical clock: 86
+2025-03-03 23:14:04 - [SENT] to Machine 1, Logical clock: 86
+2025-03-03 23:14:05 - [SENT] to Machine 0, Logical clock: 87
+2025-03-03 23:14:05 - [SENT] to Machine 0, Logical clock: 88
+2025-03-03 23:14:05 - [SENT] to Machine 0, Logical clock: 89
+2025-03-03 23:14:05 - [SENT] to Machine 1, Logical clock: 89
+2025-03-03 23:14:05 - my queue: logical_clock: 75
+
+2025-03-03 23:14:05 - [INTERNAL], Logical clock: 91
+2025-03-03 23:14:05 - [INTERNAL], Logical clock: 92
+2025-03-03 23:14:05 - [INTERNAL], Logical clock: 93
+2025-03-03 23:14:06 - [SENT] to Machine 0, Logical clock: 93
+2025-03-03 23:14:06 - my queue: logical_clock: 78
+
+2025-03-03 23:14:06 - [SENT] to Machine 0, Logical clock: 94
+2025-03-03 23:14:06 - [SENT] to Machine 1, Logical clock: 94
+2025-03-03 23:14:06 - [SENT] to Machine 0, Logical clock: 95
+2025-03-03 23:14:06 - my queue: logical_clock: 80
+
+2025-03-03 23:14:06 - [SENT] to Machine 0, Logical clock: 96
+2025-03-03 23:14:06 - [INTERNAL], Logical clock: 98
+2025-03-03 23:14:06 - [SENT] to Machine 0, Logical clock: 98
+2025-03-03 23:14:07 - [SENT] to Machine 0, Logical clock: 99
+2025-03-03 23:14:07 - [INTERNAL], Logical clock: 101
+2025-03-03 23:14:07 - my queue: logical_clock: 84
+
+2025-03-03 23:14:07 - [SENT] to Machine 0, Logical clock: 101
+2025-03-03 23:14:07 - [SENT] to Machine 0, Logical clock: 102
+2025-03-03 23:14:07 - my queue: logical_clock: 86
+
+2025-03-03 23:14:07 - [SENT] to Machine 0, Logical clock: 103
+2025-03-03 23:14:07 - [SENT] to Machine 0, Logical clock: 104
+2025-03-03 23:14:08 - [SENT] to Machine 0, Logical clock: 105
+2025-03-03 23:14:08 - [SENT] to Machine 1, Logical clock: 105
+2025-03-03 23:14:08 - my queue: logical_clock: 88
+
+2025-03-03 23:14:08 - [SENT] to Machine 0, Logical clock: 106
+2025-03-03 23:14:08 - my queue: logical_clock: 89
+
+2025-03-03 23:14:08 - [SENT] to Machine 0, Logical clock: 107
+2025-03-03 23:14:08 - [SENT] to Machine 1, Logical clock: 108
+2025-03-03 23:14:08 - [INTERNAL], Logical clock: 110
+2025-03-03 23:14:08 - [SENT] to Machine 0, Logical clock: 110
+2025-03-03 23:14:08 - [SENT] to Machine 1, Logical clock: 110
+2025-03-03 23:14:09 - [SENT] to Machine 0, Logical clock: 111
+2025-03-03 23:14:09 - [SENT] to Machine 1, Logical clock: 111
+2025-03-03 23:14:09 - [INTERNAL], Logical clock: 113
+2025-03-03 23:14:09 - [SENT] to Machine 0, Logical clock: 113
+2025-03-03 23:14:09 - [SENT] to Machine 0, Logical clock: 114
+2025-03-03 23:14:09 - [SENT] to Machine 1, Logical clock: 114
+2025-03-03 23:14:09 - [SENT] to Machine 0, Logical clock: 115
+2025-03-03 23:14:09 - my queue: sender_id: 1
+logical_clock: 39
+
+2025-03-03 23:14:10 - [SENT] to Machine 0, Logical clock: 116
+2025-03-03 23:14:10 - [INTERNAL], Logical clock: 118
+2025-03-03 23:14:10 - [INTERNAL], Logical clock: 119
+2025-03-03 23:14:10 - [INTERNAL], Logical clock: 120
+2025-03-03 23:14:10 - [INTERNAL], Logical clock: 121
+2025-03-03 23:14:10 - [SENT] to Machine 0, Logical clock: 121
+2025-03-03 23:14:10 - [SENT] to Machine 1, Logical clock: 121
+2025-03-03 23:14:10 - my queue: sender_id: 1
+logical_clock: 41
+
+2025-03-03 23:14:11 - [SENT] to Machine 0, Logical clock: 122
+2025-03-03 23:14:11 - [SENT] to Machine 0, Logical clock: 123
+2025-03-03 23:14:11 - [SENT] to Machine 1, Logical clock: 123
+2025-03-03 23:14:11 - [SENT] to Machine 0, Logical clock: 124
+2025-03-03 23:14:11 - [SENT] to Machine 1, Logical clock: 124
+2025-03-03 23:14:11 - my queue: logical_clock: 104
+
+2025-03-03 23:14:11 - [SENT] to Machine 0, Logical clock: 125
+2025-03-03 23:14:11 - [SENT] to Machine 0, Logical clock: 126
+2025-03-03 23:14:11 - [SENT] to Machine 1, Logical clock: 126
+2025-03-03 23:14:11 - my queue: logical_clock: 106
+
+2025-03-03 23:14:11 - [SENT] to Machine 0, Logical clock: 127
+2025-03-03 23:14:12 - [INTERNAL], Logical clock: 129
+2025-03-03 23:14:12 - [INTERNAL], Logical clock: 130
+2025-03-03 23:14:12 - [SENT] to Machine 0, Logical clock: 130
+2025-03-03 23:14:12 - [INTERNAL], Logical clock: 132
+2025-03-03 23:14:12 - [SENT] to Machine 0, Logical clock: 132
+2025-03-03 23:14:12 - [SENT] to Machine 0, Logical clock: 133
+2025-03-03 23:14:13 - my queue: logical_clock: 112
+
+2025-03-03 23:14:13 - [INTERNAL], Logical clock: 135
+2025-03-03 23:14:13 - [INTERNAL], Logical clock: 136
+2025-03-03 23:14:13 - [SENT] to Machine 0, Logical clock: 136
+2025-03-03 23:14:13 - [SENT] to Machine 1, Logical clock: 136
+2025-03-03 23:14:13 - [SENT] to Machine 0, Logical clock: 137
+2025-03-03 23:14:13 - [INTERNAL], Logical clock: 139
+2025-03-03 23:14:13 - [SENT] to Machine 0, Logical clock: 139
+2025-03-03 23:14:14 - [INTERNAL], Logical clock: 141
+2025-03-03 23:14:14 - [SENT] to Machine 0, Logical clock: 141
+2025-03-03 23:14:14 - my queue: sender_id: 1
+logical_clock: 48
+
+2025-03-03 23:14:14 - [SENT] to Machine 0, Logical clock: 142
+2025-03-03 23:14:14 - [INTERNAL], Logical clock: 144
+2025-03-03 23:14:14 - [SENT] to Machine 0, Logical clock: 144
+2025-03-03 23:14:14 - [SENT] to Machine 0, Logical clock: 145
+2025-03-03 23:14:15 - [SENT] to Machine 0, Logical clock: 146
+2025-03-03 23:14:15 - [INTERNAL], Logical clock: 148
+2025-03-03 23:14:15 - [SENT] to Machine 0, Logical clock: 148
+2025-03-03 23:14:15 - [SENT] to Machine 1, Logical clock: 148
+2025-03-03 23:14:15 - [SENT] to Machine 0, Logical clock: 149
+2025-03-03 23:14:15 - [SENT] to Machine 0, Logical clock: 150
+2025-03-03 23:14:15 - my queue: sender_id: 1
+logical_clock: 51
+
+2025-03-03 23:14:15 - [INTERNAL], Logical clock: 152
+2025-03-03 23:14:16 - [SENT] to Machine 0, Logical clock: 152
+2025-03-03 23:14:16 - [SENT] to Machine 0, Logical clock: 153
+2025-03-03 23:14:16 - [SENT] to Machine 1, Logical clock: 153
+2025-03-03 23:14:16 - [SENT] to Machine 0, Logical clock: 154
+2025-03-03 23:14:16 - [SENT] to Machine 1, Logical clock: 154
+2025-03-03 23:14:16 - [INTERNAL], Logical clock: 156
+2025-03-03 23:14:16 - [SENT] to Machine 1, Logical clock: 156
+2025-03-03 23:14:16 - my queue: sender_id: 1
+logical_clock: 53
+
+2025-03-03 23:14:17 - [SENT] to Machine 0, Logical clock: 157
+2025-03-03 23:14:17 - my queue: logical_clock: 132
+
+2025-03-03 23:14:17 - [INTERNAL], Logical clock: 159
+2025-03-03 23:14:17 - [SENT] to Machine 0, Logical clock: 159
+2025-03-03 23:14:17 - [SENT] to Machine 0, Logical clock: 160
+2025-03-03 23:14:17 - [SENT] to Machine 0, Logical clock: 161
+2025-03-03 23:14:17 - my queue: logical_clock: 135
+
+2025-03-03 23:14:17 - [INTERNAL], Logical clock: 163
+2025-03-03 23:14:17 - my queue: logical_clock: 136
+
+2025-03-03 23:14:17 - my queue: sender_id: 1
+logical_clock: 55
+
+2025-03-03 23:14:18 - [SENT] to Machine 0, Logical clock: 163
+2025-03-03 23:14:18 - [SENT] to Machine 0, Logical clock: 164
+2025-03-03 23:14:18 - [SENT] to Machine 0, Logical clock: 165
+2025-03-03 23:14:18 - my queue: logical_clock: 139
+
+2025-03-03 23:14:18 - [SENT] to Machine 0, Logical clock: 166
+2025-03-03 23:14:18 - [SENT] to Machine 0, Logical clock: 167
+2025-03-03 23:14:18 - my queue: logical_clock: 140
+
+2025-03-03 23:14:18 - [SENT] to Machine 0, Logical clock: 168
+2025-03-03 23:14:18 - my queue: logical_clock: 141
+
+2025-03-03 23:14:19 - [SENT] to Machine 0, Logical clock: 169
+2025-03-03 23:14:19 - [SENT] to Machine 0, Logical clock: 170
+2025-03-03 23:14:19 - [INTERNAL], Logical clock: 172
+2025-03-03 23:14:19 - [SENT] to Machine 0, Logical clock: 172
+2025-03-03 23:14:19 - [SENT] to Machine 0, Logical clock: 173
+2025-03-03 23:14:19 - [SENT] to Machine 0, Logical clock: 174
+2025-03-03 23:14:19 - my queue: sender_id: 1
+logical_clock: 59
+
+2025-03-03 23:14:19 - my queue: logical_clock: 146
+
+2025-03-03 23:14:20 - [SENT] to Machine 0, Logical clock: 175
+2025-03-03 23:14:20 - [INTERNAL], Logical clock: 177
+2025-03-03 23:14:20 - [INTERNAL], Logical clock: 178
+2025-03-03 23:14:20 - my queue: sender_id: 1
+logical_clock: 60
+
+2025-03-03 23:14:20 - [INTERNAL], Logical clock: 179
+2025-03-03 23:14:20 - [INTERNAL], Logical clock: 180
+2025-03-03 23:14:20 - [SENT] to Machine 1, Logical clock: 180
+2025-03-03 23:14:20 - my queue: logical_clock: 151
+
+2025-03-03 23:14:21 - [SENT] to Machine 0, Logical clock: 181
+2025-03-03 23:14:21 - [SENT] to Machine 0, Logical clock: 182
+2025-03-03 23:14:21 - my queue: logical_clock: 153
+
+2025-03-03 23:14:21 - [SENT] to Machine 0, Logical clock: 183
+2025-03-03 23:14:21 - [SENT] to Machine 1, Logical clock: 184
+2025-03-03 23:14:21 - [SENT] to Machine 0, Logical clock: 185
+2025-03-03 23:14:21 - [INTERNAL], Logical clock: 187
+2025-03-03 23:14:22 - [INTERNAL], Logical clock: 188
+2025-03-03 23:14:22 - [SENT] to Machine 0, Logical clock: 188
+2025-03-03 23:14:22 - my queue: logical_clock: 158
+
+2025-03-03 23:14:22 - [SENT] to Machine 0, Logical clock: 189
+2025-03-03 23:14:22 - [INTERNAL], Logical clock: 191
+2025-03-03 23:14:22 - [SENT] to Machine 0, Logical clock: 191
+2025-03-03 23:14:22 - [SENT] to Machine 1, Logical clock: 191
+2025-03-03 23:14:22 - [SENT] to Machine 0, Logical clock: 192
+2025-03-03 23:14:23 - [SENT] to Machine 0, Logical clock: 193
+2025-03-03 23:14:23 - [SENT] to Machine 1, Logical clock: 194
+2025-03-03 23:14:23 - [INTERNAL], Logical clock: 196
+2025-03-03 23:14:23 - [SENT] to Machine 0, Logical clock: 196
+2025-03-03 23:14:23 - [SENT] to Machine 1, Logical clock: 196
+2025-03-03 23:14:23 - [SENT] to Machine 0, Logical clock: 197
+2025-03-03 23:14:23 - [SENT] to Machine 0, Logical clock: 198
+2025-03-03 23:14:24 - [SENT] to Machine 0, Logical clock: 199
+2025-03-03 23:14:24 - [INTERNAL], Logical clock: 201
+2025-03-03 23:14:24 - my queue: sender_id: 1
+logical_clock: 68
+
+2025-03-03 23:14:24 - [SENT] to Machine 0, Logical clock: 201
+2025-03-03 23:14:24 - [SENT] to Machine 0, Logical clock: 202
+2025-03-03 23:14:24 - my queue: logical_clock: 170
+
+2025-03-03 23:14:24 - [SENT] to Machine 0, Logical clock: 203
+2025-03-03 23:14:25 - [SENT] to Machine 1, Logical clock: 204
+2025-03-03 23:14:25 - [INTERNAL], Logical clock: 206
+2025-03-03 23:14:25 - [SENT] to Machine 0, Logical clock: 206
+2025-03-03 23:14:25 - [SENT] to Machine 1, Logical clock: 207
+2025-03-03 23:14:25 - [INTERNAL], Logical clock: 209
+2025-03-03 23:14:25 - [SENT] to Machine 0, Logical clock: 209
+2025-03-03 23:14:26 - [INTERNAL], Logical clock: 211
+2025-03-03 23:14:26 - [SENT] to Machine 0, Logical clock: 211
+2025-03-03 23:14:26 - [SENT] to Machine 0, Logical clock: 212
+2025-03-03 23:14:26 - [SENT] to Machine 1, Logical clock: 212
+2025-03-03 23:14:26 - [SENT] to Machine 1, Logical clock: 213
+2025-03-03 23:14:26 - [SENT] to Machine 0, Logical clock: 214
+2025-03-03 23:14:26 - my queue: logical_clock: 180
+
+2025-03-03 23:14:26 - [SENT] to Machine 0, Logical clock: 215
+2025-03-03 23:14:27 - [SENT] to Machine 0, Logical clock: 216
+2025-03-03 23:14:27 - [SENT] to Machine 0, Logical clock: 217
+2025-03-03 23:14:27 - [INTERNAL], Logical clock: 219
+2025-03-03 23:14:27 - [SENT] to Machine 0, Logical clock: 219
+2025-03-03 23:14:27 - my queue: logical_clock: 184
+
+2025-03-03 23:14:27 - [SENT] to Machine 0, Logical clock: 220
+2025-03-03 23:14:27 - [SENT] to Machine 1, Logical clock: 221
+2025-03-03 23:14:28 - my queue: logical_clock: 186
+
+2025-03-03 23:14:28 - [SENT] to Machine 0, Logical clock: 222
+2025-03-03 23:14:28 - [SENT] to Machine 0, Logical clock: 223
+2025-03-03 23:14:28 - [SENT] to Machine 1, Logical clock: 223
+2025-03-03 23:14:28 - [SENT] to Machine 0, Logical clock: 224
+2025-03-03 23:14:28 - my queue: logical_clock: 188
+
+2025-03-03 23:14:28 - [INTERNAL], Logical clock: 226
+2025-03-03 23:14:28 - [SENT] to Machine 0, Logical clock: 226
+2025-03-03 23:14:28 - [SENT] to Machine 0, Logical clock: 227
+2025-03-03 23:14:29 - [SENT] to Machine 0, Logical clock: 228
+2025-03-03 23:14:29 - [INTERNAL], Logical clock: 230
+2025-03-03 23:14:29 - my queue: logical_clock: 192
+
+2025-03-03 23:14:29 - [INTERNAL], Logical clock: 231
+2025-03-03 23:14:29 - [INTERNAL], Logical clock: 232
+2025-03-03 23:14:29 - [SENT] to Machine 0, Logical clock: 232
+2025-03-03 23:14:29 - my queue: logical_clock: 195
+
+2025-03-03 23:14:29 - [SENT] to Machine 0, Logical clock: 233
+2025-03-03 23:14:30 - [SENT] to Machine 0, Logical clock: 234
+2025-03-03 23:14:30 - [INTERNAL], Logical clock: 236
+2025-03-03 23:14:30 - [INTERNAL], Logical clock: 237
+2025-03-03 23:14:30 - [SENT] to Machine 0, Logical clock: 237
+2025-03-03 23:14:30 - [INTERNAL], Logical clock: 239
+2025-03-03 23:14:30 - my queue: logical_clock: 200
+
+2025-03-03 23:14:31 - [SENT] to Machine 0, Logical clock: 239
+2025-03-03 23:14:31 - my queue: sender_id: 1
+logical_clock: 81
+
+2025-03-03 23:14:31 - [SENT] to Machine 0, Logical clock: 240
+2025-03-03 23:14:31 - [SENT] to Machine 1, Logical clock: 241
+2025-03-03 23:14:31 - [SENT] to Machine 0, Logical clock: 242
+2025-03-03 23:14:31 - my queue: sender_id: 1
+logical_clock: 82
+
+2025-03-03 23:14:31 - my queue: logical_clock: 203
+
+2025-03-03 23:14:31 - [INTERNAL], Logical clock: 244
+2025-03-03 23:14:31 - [SENT] to Machine 0, Logical clock: 244
+2025-03-03 23:14:32 - [SENT] to Machine 0, Logical clock: 245
+2025-03-03 23:14:32 - my queue: logical_clock: 206
+
+2025-03-03 23:14:32 - [INTERNAL], Logical clock: 247
+2025-03-03 23:14:32 - [SENT] to Machine 1, Logical clock: 247
+2025-03-03 23:14:32 - [INTERNAL], Logical clock: 249
+2025-03-03 23:14:32 - [SENT] to Machine 0, Logical clock: 249
+2025-03-03 23:14:32 - [SENT] to Machine 0, Logical clock: 250
+2025-03-03 23:14:33 - [SENT] to Machine 0, Logical clock: 251
+2025-03-03 23:14:33 - [SENT] to Machine 1, Logical clock: 251
+2025-03-03 23:14:33 - my queue: logical_clock: 211
+
+2025-03-03 23:14:33 - [SENT] to Machine 0, Logical clock: 252
+2025-03-03 23:14:33 - [SENT] to Machine 0, Logical clock: 253
+2025-03-03 23:14:33 - my queue: sender_id: 1
+logical_clock: 86
+
+2025-03-03 23:14:33 - [SENT] to Machine 0, Logical clock: 254
+2025-03-03 23:14:33 - [SENT] to Machine 1, Logical clock: 254
+2025-03-03 23:14:33 - [INTERNAL], Logical clock: 256
+2025-03-03 23:14:33 - [SENT] to Machine 0, Logical clock: 256
+2025-03-03 23:14:34 - [INTERNAL], Logical clock: 258
+2025-03-03 23:14:34 - [INTERNAL], Logical clock: 259
+2025-03-03 23:14:34 - [SENT] to Machine 1, Logical clock: 259
+2025-03-03 23:14:34 - my queue: logical_clock: 217
+
+2025-03-03 23:14:34 - [SENT] to Machine 0, Logical clock: 260
+2025-03-03 23:14:34 - [SENT] to Machine 0, Logical clock: 261
+2025-03-03 23:14:34 - [SENT] to Machine 0, Logical clock: 262
+2025-03-03 23:14:35 - my queue: logical_clock: 220
+
+2025-03-03 23:14:35 - [INTERNAL], Logical clock: 264
+2025-03-03 23:14:35 - [SENT] to Machine 0, Logical clock: 264
+2025-03-03 23:14:35 - [SENT] to Machine 1, Logical clock: 265
+2025-03-03 23:14:35 - [INTERNAL], Logical clock: 267
+2025-03-03 23:14:35 - [SENT] to Machine 0, Logical clock: 267
+2025-03-03 23:14:35 - [INTERNAL], Logical clock: 269
+2025-03-03 23:14:36 - my queue: sender_id: 1
+logical_clock: 91
+
+2025-03-03 23:14:36 - [INTERNAL], Logical clock: 270
+2025-03-03 23:14:36 - my queue: logical_clock: 226
+
+2025-03-03 23:14:36 - [SENT] to Machine 0, Logical clock: 270
+2025-03-03 23:14:36 - [INTERNAL], Logical clock: 272
+2025-03-03 23:14:36 - [INTERNAL], Logical clock: 273
+2025-03-03 23:14:36 - my queue: logical_clock: 228
+
+2025-03-03 23:14:36 - [SENT] to Machine 0, Logical clock: 273
+2025-03-03 23:14:36 - [INTERNAL], Logical clock: 275
+2025-03-03 23:14:37 - [SENT] to Machine 0, Logical clock: 275
+2025-03-03 23:14:37 - [SENT] to Machine 1, Logical clock: 275
+2025-03-03 23:14:37 - [SENT] to Machine 0, Logical clock: 276
+2025-03-03 23:14:37 - [SENT] to Machine 0, Logical clock: 277
+2025-03-03 23:14:37 - [INTERNAL], Logical clock: 279
+2025-03-03 23:14:37 - [INTERNAL], Logical clock: 280
+2025-03-03 23:14:37 - [SENT] to Machine 0, Logical clock: 280
+2025-03-03 23:14:38 - my queue: logical_clock: 235
+
+2025-03-03 23:14:38 - [SENT] to Machine 0, Logical clock: 281
+2025-03-03 23:14:38 - [SENT] to Machine 0, Logical clock: 282
+2025-03-03 23:14:38 - [SENT] to Machine 1, Logical clock: 282
+2025-03-03 23:14:38 - [SENT] to Machine 0, Logical clock: 283
+2025-03-03 23:14:38 - [INTERNAL], Logical clock: 285
+2025-03-03 23:14:38 - my queue: logical_clock: 238
+
+2025-03-03 23:14:38 - [SENT] to Machine 0, Logical clock: 285
+2025-03-03 23:14:38 - my queue: logical_clock: 239
+
+2025-03-03 23:14:39 - [SENT] to Machine 0, Logical clock: 286
+2025-03-03 23:14:39 - [INTERNAL], Logical clock: 288
+2025-03-03 23:14:39 - [INTERNAL], Logical clock: 289
+2025-03-03 23:14:39 - [SENT] to Machine 0, Logical clock: 289
+2025-03-03 23:14:39 - [SENT] to Machine 0, Logical clock: 290
+2025-03-03 23:14:39 - [INTERNAL], Logical clock: 292
+2025-03-03 23:14:39 - my queue: logical_clock: 244
+
+2025-03-03 23:14:40 - [INTERNAL], Logical clock: 293
+2025-03-03 23:14:40 - [SENT] to Machine 0, Logical clock: 293
+2025-03-03 23:14:40 - [INTERNAL], Logical clock: 295
+2025-03-03 23:14:40 - my queue: logical_clock: 247
+
+2025-03-03 23:14:40 - [SENT] to Machine 0, Logical clock: 295
+2025-03-03 23:14:40 - [SENT] to Machine 1, Logical clock: 295
+2025-03-03 23:14:40 - my queue: logical_clock: 248
+
+2025-03-03 23:14:40 - [SENT] to Machine 0, Logical clock: 296
+2025-03-03 23:14:40 - [SENT] to Machine 1, Logical clock: 296
+2025-03-03 23:14:40 - [SENT] to Machine 0, Logical clock: 297
+2025-03-03 23:14:41 - [INTERNAL], Logical clock: 299
+2025-03-03 23:14:41 - [INTERNAL], Logical clock: 300
+2025-03-03 23:14:41 - [INTERNAL], Logical clock: 301
+2025-03-03 23:14:41 - my queue: logical_clock: 252
+
+2025-03-03 23:14:41 - [SENT] to Machine 0, Logical clock: 301
+2025-03-03 23:14:41 - my queue: logical_clock: 253
+
+2025-03-03 23:14:41 - [SENT] to Machine 0, Logical clock: 302
+2025-03-03 23:14:41 - [INTERNAL], Logical clock: 304
+2025-03-03 23:14:42 - [SENT] to Machine 1, Logical clock: 304
+2025-03-03 23:14:42 - [SENT] to Machine 0, Logical clock: 305
+2025-03-03 23:14:42 - [SENT] to Machine 1, Logical clock: 306
+2025-03-03 23:14:42 - [SENT] to Machine 0, Logical clock: 307
+2025-03-03 23:14:42 - my queue: logical_clock: 258
+
+2025-03-03 23:14:42 - [SENT] to Machine 0, Logical clock: 308
+2025-03-03 23:14:42 - [SENT] to Machine 0, Logical clock: 309
+2025-03-03 23:14:43 - [SENT] to Machine 0, Logical clock: 310
+2025-03-03 23:14:43 - [SENT] to Machine 1, Logical clock: 310
+2025-03-03 23:14:43 - my queue: logical_clock: 260
+
+2025-03-03 23:14:43 - [INTERNAL], Logical clock: 312
+2025-03-03 23:14:43 - [INTERNAL], Logical clock: 313
+2025-03-03 23:14:43 - my queue: logical_clock: 262
+
+2025-03-03 23:14:43 - [SENT] to Machine 0, Logical clock: 313
+2025-03-03 23:14:43 - [SENT] to Machine 1, Logical clock: 313
+2025-03-03 23:14:43 - [INTERNAL], Logical clock: 315
+2025-03-03 23:14:43 - [SENT] to Machine 0, Logical clock: 315
+2025-03-03 23:14:44 - [SENT] to Machine 0, Logical clock: 316
+2025-03-03 23:14:44 - my queue: logical_clock: 265
+
+2025-03-03 23:14:44 - [INTERNAL], Logical clock: 318
+2025-03-03 23:14:44 - [SENT] to Machine 0, Logical clock: 318
+2025-03-03 23:14:44 - my queue: logical_clock: 267
+
+2025-03-03 23:14:44 - [SENT] to Machine 1, Logical clock: 319
+2025-03-03 23:14:44 - my queue: logical_clock: 268
+
+2025-03-03 23:14:44 - [SENT] to Machine 0, Logical clock: 320
+2025-03-03 23:14:45 - [INTERNAL], Logical clock: 322
+2025-03-03 23:14:45 - [SENT] to Machine 0, Logical clock: 322
+2025-03-03 23:14:45 - [INTERNAL], Logical clock: 324
+2025-03-03 23:14:45 - [INTERNAL], Logical clock: 325
+2025-03-03 23:14:45 - [SENT] to Machine 0, Logical clock: 325
+2025-03-03 23:14:45 - [INTERNAL], Logical clock: 327
+2025-03-03 23:14:46 - [SENT] to Machine 0, Logical clock: 327
+2025-03-03 23:14:46 - my queue: sender_id: 1
+logical_clock: 111
+
+2025-03-03 23:14:46 - [SENT] to Machine 0, Logical clock: 328
+2025-03-03 23:14:46 - [SENT] to Machine 1, Logical clock: 328
+2025-03-03 23:14:46 - [SENT] to Machine 0, Logical clock: 329
+2025-03-03 23:14:46 - [SENT] to Machine 0, Logical clock: 330
+2025-03-03 23:14:46 - [SENT] to Machine 0, Logical clock: 331
+2025-03-03 23:14:46 - [INTERNAL], Logical clock: 333
+2025-03-03 23:14:47 - [SENT] to Machine 0, Logical clock: 333
+2025-03-03 23:14:47 - [INTERNAL], Logical clock: 335
+2025-03-03 23:14:47 - [SENT] to Machine 0, Logical clock: 335
+2025-03-03 23:14:47 - [SENT] to Machine 1, Logical clock: 335
+2025-03-03 23:14:47 - [INTERNAL], Logical clock: 337
+2025-03-03 23:14:47 - my queue: sender_id: 1
+logical_clock: 114
+
+2025-03-03 23:14:47 - [SENT] to Machine 0, Logical clock: 337
+2025-03-03 23:14:47 - [SENT] to Machine 0, Logical clock: 338
+2025-03-03 23:14:48 - [INTERNAL], Logical clock: 340

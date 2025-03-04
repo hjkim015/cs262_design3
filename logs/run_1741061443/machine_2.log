@@ -1,0 +1,356 @@
+2025-03-03 23:10:43 - [INIT] with clock rate 6 and peers ['localhost:50050', 'localhost:50051'], [0, 1]
+2025-03-03 23:10:45 - [INTERNAL], Logical clock: 1
+2025-03-03 23:10:45 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:45.279834-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:45 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:45.450585-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:45 - [INTERNAL], Logical clock: 4
+2025-03-03 23:10:45 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:45.79414-05:00"}"
+>
+2025-03-03 23:10:45 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:45.965438-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:45 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:45.966673-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:46 - [INTERNAL], Logical clock: 7
+2025-03-03 23:10:46 - [INTERNAL], Logical clock: 8
+2025-03-03 23:10:46 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:46.478045-05:00"}"
+>
+2025-03-03 23:10:46 - [INTERNAL], Logical clock: 10
+2025-03-03 23:10:46 - [INTERNAL], Logical clock: 11
+2025-03-03 23:10:46 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:46.990579-05:00"}"
+>
+2025-03-03 23:10:47 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:47.1621-05:00"}"
+>
+2025-03-03 23:10:47 - [INTERNAL], Logical clock: 14
+2025-03-03 23:10:47 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:47.497964-05:00"}"
+>
+2025-03-03 23:10:47 - [INTERNAL], Logical clock: 16
+2025-03-03 23:10:47 - [INTERNAL], Logical clock: 17
+2025-03-03 23:10:48 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:48.012493-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:48 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:48.183541-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:48 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:48.35305-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:48 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:48.52458-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:48 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:48.69665-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:48 - [INTERNAL], Logical clock: 23
+2025-03-03 23:10:49 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:49.033143-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:49 - [INTERNAL], Logical clock: 25
+2025-03-03 23:10:49 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:49.372837-05:00"}"
+>
+2025-03-03 23:10:49 - [INTERNAL], Logical clock: 27
+2025-03-03 23:10:49 - [INTERNAL], Logical clock: 28
+2025-03-03 23:10:49 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:49.879016-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:50.050764-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:50.22121-05:00"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:50.392809-05:00"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:50.394229-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:50.564558-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:50.736932-05:00"}"
+>
+2025-03-03 23:10:50 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:50.907084-05:00"}"
+>
+2025-03-03 23:10:51 - [INTERNAL], Logical clock: 36
+2025-03-03 23:10:51 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:51.245646-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:51 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:51.416879-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:51 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:51.585869-05:00"}"
+>
+2025-03-03 23:10:51 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:51.757268-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:51 - [INTERNAL], Logical clock: 41
+2025-03-03 23:10:52 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:52.100251-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:52 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:52.269867-05:00"}"
+>
+2025-03-03 23:10:52 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:52.441089-05:00"}"
+>
+2025-03-03 23:10:52 - [INTERNAL], Logical clock: 45
+2025-03-03 23:10:52 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:52.779396-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:52 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:52.781028-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:52 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:52.949705-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:53 - [INTERNAL], Logical clock: 48
+2025-03-03 23:10:53 - [INTERNAL], Logical clock: 49
+2025-03-03 23:10:53 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:53.460756-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:53 - [INTERNAL], Logical clock: 51
+2025-03-03 23:10:53 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:53.803428-05:00"}"
+>
+2025-03-03 23:10:53 - [INTERNAL], Logical clock: 53
+2025-03-03 23:10:54 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:54.14264-05:00"}"
+>
+2025-03-03 23:10:54 - [INTERNAL], Logical clock: 55
+2025-03-03 23:10:54 - [INTERNAL], Logical clock: 56
+2025-03-03 23:10:54 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:54.649413-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:54 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:54.650593-05:00"}"
+>
+2025-03-03 23:10:54 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:54.821312-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:54 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:54.993842-05:00"}"
+>
+2025-03-03 23:10:54 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:54.995438-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:55 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:55.160745-05:00"}"
+>
+2025-03-03 23:10:55 - [INTERNAL], Logical clock: 61
+2025-03-03 23:10:55 - [INTERNAL], Logical clock: 62
+2025-03-03 23:10:55 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:55.675184-05:00"}"
+>
+2025-03-03 23:10:55 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:55.846783-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:56.01845-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:56.189801-05:00"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:56.362152-05:00"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:56.531181-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:56.700164-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:56.87826-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:56 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:56.881534-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:57 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:57.043765-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:57 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:57.211703-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:57 - [INTERNAL], Logical clock: 73
+2025-03-03 23:10:57 - [INTERNAL], Logical clock: 74
+2025-03-03 23:10:57 - [INTERNAL], Logical clock: 75
+2025-03-03 23:10:57 - [INTERNAL], Logical clock: 76
+2025-03-03 23:10:58 - [INTERNAL], Logical clock: 77
+2025-03-03 23:10:58 - [INTERNAL], Logical clock: 78
+2025-03-03 23:10:58 - [INTERNAL], Logical clock: 79
+2025-03-03 23:10:58 - [INTERNAL], Logical clock: 80
+2025-03-03 23:10:58 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:58.744429-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:58 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:58.911287-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:59 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:59.080724-05:00"}"
+>
+2025-03-03 23:10:59 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:59.248563-05:00"}"
+>
+2025-03-03 23:10:59 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:59.440221-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:59 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:10:59.596271-05:00"}"
+>
+2025-03-03 23:10:59 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:59.764451-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:10:59 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-03-03T23:10:59.935005-05:00", grpc_status:2, grpc_message:"Exception calling application: \'Logger\' object is not callable"}"
+>
+2025-03-03 23:11:00 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:11:00.10556-05:00"}"
+>
+2025-03-03 23:11:00 - [INTERNAL], Logical clock: 90
+2025-03-03 23:11:00 - [INTERNAL], Logical clock: 91
+2025-03-03 23:11:00 - <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'Logger' object is not callable"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'Logger\' object is not callable", grpc_status:2, created_time:"2025-03-03T23:11:00.61692-05:00"}"
+>
+2025-03-03 23:11:00 - [INTERNAL], Logical clock: 93

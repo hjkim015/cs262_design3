@@ -1,0 +1,940 @@
+2025-03-03 23:12:53 - [INIT] with clock rate 1 and peers ['localhost:50051', 'localhost:50052'], [1, 2]
+2025-03-03 23:12:55 - Received both, sender_id: 1
+, <grpc._server._Context object at 0x102302a30>
+2025-03-03 23:12:55 - Received request, sender_id: 1
+
+2025-03-03 23:12:55 - [SENT] to Machine 1, Logical clock: 0
+2025-03-03 23:12:55 - Received both, sender_id: 2
+logical_clock: 1
+, <grpc._server._Context object at 0x1021fe6a0>
+2025-03-03 23:12:55 - Received request, sender_id: 2
+logical_clock: 1
+
+2025-03-03 23:12:55 - Received both, sender_id: 1
+logical_clock: 2
+, <grpc._server._Context object at 0x102302040>
+2025-03-03 23:12:55 - Received request, sender_id: 1
+logical_clock: 2
+
+2025-03-03 23:12:56 - [SENT] to Machine 2, Logical clock: 1
+2025-03-03 23:12:57 - [SENT] to Machine 1, Logical clock: 2
+2025-03-03 23:12:57 - Received both, sender_id: 1
+logical_clock: 9
+, <grpc._server._Context object at 0x102302b80>
+2025-03-03 23:12:57 - Received request, sender_id: 1
+logical_clock: 9
+
+2025-03-03 23:12:57 - Received both, sender_id: 1
+logical_clock: 10
+, <grpc._server._Context object at 0x1022d6490>
+2025-03-03 23:12:57 - Received request, sender_id: 1
+logical_clock: 10
+
+2025-03-03 23:12:57 - Received both, sender_id: 2
+logical_clock: 13
+, <grpc._server._Context object at 0x1022d6370>
+2025-03-03 23:12:57 - Received request, sender_id: 2
+logical_clock: 13
+
+2025-03-03 23:12:58 - Received both, sender_id: 2
+logical_clock: 14
+, <grpc._server._Context object at 0x1022df730>
+2025-03-03 23:12:58 - Received request, sender_id: 2
+logical_clock: 14
+
+2025-03-03 23:12:58 - [RECEIVED] from Machine 1, Logical clock: 11, Queue length: 0
+2025-03-03 23:12:59 - Received both, sender_id: 1
+logical_clock: 17
+, <grpc._server._Context object at 0x102302040>
+2025-03-03 23:12:59 - Received request, sender_id: 1
+logical_clock: 17
+
+2025-03-03 23:12:59 - [RECEIVED] from Machine 1, Logical clock: 12, Queue length: 0
+2025-03-03 23:12:59 - Received both, sender_id: 1
+logical_clock: 19
+, <grpc._server._Context object at 0x102302e50>
+2025-03-03 23:12:59 - Received request, sender_id: 1
+logical_clock: 19
+
+2025-03-03 23:13:00 - Received both, sender_id: 1
+logical_clock: 21
+, <grpc._server._Context object at 0x102302ac0>
+2025-03-03 23:13:00 - Received request, sender_id: 1
+logical_clock: 21
+
+2025-03-03 23:13:00 - [RECEIVED] from Machine 1, Logical clock: 21, Queue length: 0
+2025-03-03 23:13:00 - Received both, sender_id: 2
+logical_clock: 26
+, <grpc._server._Context object at 0x102302e20>
+2025-03-03 23:13:00 - Received request, sender_id: 2
+logical_clock: 26
+
+2025-03-03 23:13:00 - Received both, sender_id: 2
+logical_clock: 27
+, <grpc._server._Context object at 0x10230c400>
+2025-03-03 23:13:00 - Received request, sender_id: 2
+logical_clock: 27
+
+2025-03-03 23:13:01 - Received both, sender_id: 2
+logical_clock: 29
+, <grpc._server._Context object at 0x102302b20>
+2025-03-03 23:13:01 - Received request, sender_id: 2
+logical_clock: 29
+
+2025-03-03 23:13:01 - [RECEIVED] from Machine 1, Logical clock: 25, Queue length: 0
+2025-03-03 23:13:01 - Received both, sender_id: 2
+logical_clock: 30
+, <grpc._server._Context object at 0x102302040>
+2025-03-03 23:13:01 - Received request, sender_id: 2
+logical_clock: 30
+
+2025-03-03 23:13:01 - Received both, sender_id: 2
+logical_clock: 31
+, <grpc._server._Context object at 0x1022df8e0>
+2025-03-03 23:13:01 - Received request, sender_id: 2
+logical_clock: 31
+
+2025-03-03 23:13:01 - Received both, sender_id: 1
+logical_clock: 29
+, <grpc._server._Context object at 0x1022f8a90>
+2025-03-03 23:13:01 - Received request, sender_id: 1
+logical_clock: 29
+
+2025-03-03 23:13:02 - Received both, sender_id: 2
+logical_clock: 33
+, <grpc._server._Context object at 0x1023024f0>
+2025-03-03 23:13:02 - Received request, sender_id: 2
+logical_clock: 33
+
+2025-03-03 23:13:02 - [SENT] to Machine 2, Logical clock: 25
+2025-03-03 23:13:02 - Received both, sender_id: 2
+logical_clock: 37
+, <grpc._server._Context object at 0x10230c640>
+2025-03-03 23:13:02 - Received request, sender_id: 2
+logical_clock: 37
+
+2025-03-03 23:13:03 - Received both, sender_id: 2
+logical_clock: 38
+, <grpc._server._Context object at 0x1022d6400>
+2025-03-03 23:13:03 - Received request, sender_id: 2
+logical_clock: 38
+
+2025-03-03 23:13:03 - Received both, sender_id: 1
+logical_clock: 35
+, <grpc._server._Context object at 0x10230c700>
+2025-03-03 23:13:03 - Received request, sender_id: 1
+logical_clock: 35
+
+2025-03-03 23:13:03 - Received both, sender_id: 2
+logical_clock: 39
+, <grpc._server._Context object at 0x10230c1f0>
+2025-03-03 23:13:03 - Received request, sender_id: 2
+logical_clock: 39
+
+2025-03-03 23:13:03 - [RECEIVED] from Machine 0, Logical clock: 27, Queue length: 0
+2025-03-03 23:13:03 - Received both, sender_id: 2
+logical_clock: 40
+, <grpc._server._Context object at 0x10230c7c0>
+2025-03-03 23:13:03 - Received request, sender_id: 2
+logical_clock: 40
+
+2025-03-03 23:13:03 - Received both, sender_id: 2
+logical_clock: 41
+, <grpc._server._Context object at 0x102302f40>
+2025-03-03 23:13:03 - Received request, sender_id: 2
+logical_clock: 41
+
+2025-03-03 23:13:03 - Received both, sender_id: 1
+logical_clock: 38
+, <grpc._server._Context object at 0x10230c8b0>
+2025-03-03 23:13:03 - Received request, sender_id: 1
+logical_clock: 38
+
+2025-03-03 23:13:04 - Received both, sender_id: 1
+logical_clock: 39
+, <grpc._server._Context object at 0x1023024f0>
+2025-03-03 23:13:04 - Received request, sender_id: 1
+logical_clock: 39
+
+2025-03-03 23:13:04 - [INTERNAL], Logical clock: 28
+2025-03-03 23:13:04 - Received both, sender_id: 2
+logical_clock: 45
+, <grpc._server._Context object at 0x102302d00>
+2025-03-03 23:13:04 - Received request, sender_id: 2
+logical_clock: 45
+
+2025-03-03 23:13:04 - Received both, sender_id: 1
+logical_clock: 42
+, <grpc._server._Context object at 0x10230c1f0>
+2025-03-03 23:13:04 - Received request, sender_id: 1
+logical_clock: 42
+
+2025-03-03 23:13:05 - Received both, sender_id: 2
+logical_clock: 49
+, <grpc._server._Context object at 0x10230c610>
+2025-03-03 23:13:05 - Received request, sender_id: 2
+logical_clock: 49
+
+2025-03-03 23:13:05 - [RECEIVED] from Machine 2, Logical clock: 40, Queue length: 0
+2025-03-03 23:13:05 - Received both, sender_id: 1
+logical_clock: 47
+, <grpc._server._Context object at 0x10230c310>
+2025-03-03 23:13:05 - Received request, sender_id: 1
+logical_clock: 47
+
+2025-03-03 23:13:06 - Received both, sender_id: 1
+logical_clock: 48
+, <grpc._server._Context object at 0x102302d90>
+2025-03-03 23:13:06 - Received request, sender_id: 1
+logical_clock: 48
+
+2025-03-03 23:13:06 - [SENT] to Machine 2, Logical clock: 40
+2025-03-03 23:13:06 - Received both, sender_id: 1
+logical_clock: 49
+, <grpc._server._Context object at 0x10230c400>
+2025-03-03 23:13:06 - Received request, sender_id: 1
+logical_clock: 49
+
+2025-03-03 23:13:06 - Received both, sender_id: 1
+logical_clock: 50
+, <grpc._server._Context object at 0x10230c2e0>
+2025-03-03 23:13:06 - Received request, sender_id: 1
+logical_clock: 50
+
+2025-03-03 23:13:06 - Received both, sender_id: 1
+logical_clock: 51
+, <grpc._server._Context object at 0x1022d6370>
+2025-03-03 23:13:06 - Received request, sender_id: 1
+logical_clock: 51
+
+2025-03-03 23:13:07 - Received both, sender_id: 1
+logical_clock: 52
+, <grpc._server._Context object at 0x10230cb20>
+2025-03-03 23:13:07 - Received request, sender_id: 1
+logical_clock: 52
+
+2025-03-03 23:13:07 - Received both, sender_id: 2
+logical_clock: 59
+, <grpc._server._Context object at 0x10230c340>
+2025-03-03 23:13:07 - Received request, sender_id: 2
+logical_clock: 59
+
+2025-03-03 23:13:07 - [RECEIVED] from Machine 2, Logical clock: 56, Queue length: 1
+2025-03-03 23:13:07 - Received both, sender_id: 2
+logical_clock: 60
+, <grpc._server._Context object at 0x102302a90>
+2025-03-03 23:13:07 - Received request, sender_id: 2
+logical_clock: 60
+
+2025-03-03 23:13:07 - Received both, sender_id: 1
+logical_clock: 54
+, <grpc._server._Context object at 0x10230ca30>
+2025-03-03 23:13:07 - Received request, sender_id: 1
+logical_clock: 54
+
+2025-03-03 23:13:07 - Received both, sender_id: 1
+logical_clock: 55
+, <grpc._server._Context object at 0x10230cd60>
+2025-03-03 23:13:07 - Received request, sender_id: 1
+logical_clock: 55
+
+2025-03-03 23:13:08 - [RECEIVED] from Machine 1, Logical clock: 57, Queue length: 0
+2025-03-03 23:13:08 - Received both, sender_id: 1
+logical_clock: 57
+, <grpc._server._Context object at 0x10230cee0>
+2025-03-03 23:13:08 - Received request, sender_id: 1
+logical_clock: 57
+
+2025-03-03 23:13:08 - Received both, sender_id: 1
+logical_clock: 60
+, <grpc._server._Context object at 0x10230c580>
+2025-03-03 23:13:08 - Received request, sender_id: 1
+logical_clock: 60
+
+2025-03-03 23:13:09 - Received both, sender_id: 1
+logical_clock: 61
+, <grpc._server._Context object at 0x10230cc10>
+2025-03-03 23:13:09 - Received request, sender_id: 1
+logical_clock: 61
+
+2025-03-03 23:13:09 - [RECEIVED] from Machine 2, Logical clock: 69, Queue length: 1
+2025-03-03 23:13:09 - Received both, sender_id: 1
+logical_clock: 62
+, <grpc._server._Context object at 0x10230c880>
+2025-03-03 23:13:09 - Received request, sender_id: 1
+logical_clock: 62
+
+2025-03-03 23:13:09 - Received both, sender_id: 2
+logical_clock: 72
+, <grpc._server._Context object at 0x10230c460>
+2025-03-03 23:13:09 - Received request, sender_id: 2
+logical_clock: 72
+
+2025-03-03 23:13:10 - Received both, sender_id: 1
+logical_clock: 65
+, <grpc._server._Context object at 0x102302d30>
+2025-03-03 23:13:10 - Received request, sender_id: 1
+logical_clock: 65
+
+2025-03-03 23:13:10 - Received both, sender_id: 2
+logical_clock: 74
+, <grpc._server._Context object at 0x10230cd90>
+2025-03-03 23:13:10 - Received request, sender_id: 2
+logical_clock: 74
+
+2025-03-03 23:13:10 - [SENT] to Machine 1, Logical clock: 69
+2025-03-03 23:13:10 - Received both, sender_id: 1
+logical_clock: 66
+, <grpc._server._Context object at 0x10230cd90>
+2025-03-03 23:13:10 - Received request, sender_id: 1
+logical_clock: 66
+
+2025-03-03 23:13:11 - Received both, sender_id: 1
+logical_clock: 69
+, <grpc._server._Context object at 0x10230c3d0>
+2025-03-03 23:13:11 - Received request, sender_id: 1
+logical_clock: 69
+
+2025-03-03 23:13:11 - Received both, sender_id: 2
+logical_clock: 79
+, <grpc._server._Context object at 0x1023024f0>
+2025-03-03 23:13:11 - Received request, sender_id: 2
+logical_clock: 79
+
+2025-03-03 23:13:11 - [SENT] to Machine 2, Logical clock: 70
+2025-03-03 23:13:11 - Received both, sender_id: 1
+logical_clock: 70
+, <grpc._server._Context object at 0x1022f8220>
+2025-03-03 23:13:11 - Received request, sender_id: 1
+logical_clock: 70
+
+2025-03-03 23:13:11 - Received both, sender_id: 1
+logical_clock: 71
+, <grpc._server._Context object at 0x102302ee0>
+2025-03-03 23:13:11 - Received request, sender_id: 1
+logical_clock: 71
+
+2025-03-03 23:13:12 - Received both, sender_id: 1
+logical_clock: 80
+, <grpc._server._Context object at 0x10230c610>
+2025-03-03 23:13:12 - Received request, sender_id: 1
+logical_clock: 80
+
+2025-03-03 23:13:12 - [INTERNAL], Logical clock: 72
+2025-03-03 23:13:12 - Received both, sender_id: 1
+logical_clock: 81
+, <grpc._server._Context object at 0x10230d2e0>
+2025-03-03 23:13:12 - Received request, sender_id: 1
+logical_clock: 81
+
+2025-03-03 23:13:12 - Received both, sender_id: 1
+logical_clock: 82
+, <grpc._server._Context object at 0x10230c670>
+2025-03-03 23:13:12 - Received request, sender_id: 1
+logical_clock: 82
+
+2025-03-03 23:13:12 - Received both, sender_id: 2
+logical_clock: 87
+, <grpc._server._Context object at 0x102302d00>
+2025-03-03 23:13:12 - Received request, sender_id: 2
+logical_clock: 87
+
+2025-03-03 23:13:13 - [SENT] to Machine 1, Logical clock: 72
+2025-03-03 23:13:13 - Received both, sender_id: 2
+logical_clock: 90
+, <grpc._server._Context object at 0x10230cf40>
+2025-03-03 23:13:13 - Received request, sender_id: 2
+logical_clock: 90
+
+2025-03-03 23:13:14 - Received both, sender_id: 2
+logical_clock: 94
+, <grpc._server._Context object at 0x10230c7f0>
+2025-03-03 23:13:14 - Received request, sender_id: 2
+logical_clock: 94
+
+2025-03-03 23:13:14 - [INTERNAL], Logical clock: 74
+2025-03-03 23:13:14 - Received both, sender_id: 2
+logical_clock: 97
+, <grpc._server._Context object at 0x10230c730>
+2025-03-03 23:13:14 - Received request, sender_id: 2
+logical_clock: 97
+
+2025-03-03 23:13:15 - Received both, sender_id: 1
+logical_clock: 92
+, <grpc._server._Context object at 0x10230cb80>
+2025-03-03 23:13:15 - Received request, sender_id: 1
+logical_clock: 92
+
+2025-03-03 23:13:15 - Received both, sender_id: 2
+logical_clock: 99
+, <grpc._server._Context object at 0x10230cca0>
+2025-03-03 23:13:15 - Received request, sender_id: 2
+logical_clock: 99
+
+2025-03-03 23:13:15 - [SENT] to Machine 1, Logical clock: 74
+2025-03-03 23:13:15 - Received both, sender_id: 2
+logical_clock: 100
+, <grpc._server._Context object at 0x10230cb80>
+2025-03-03 23:13:15 - Received request, sender_id: 2
+logical_clock: 100
+
+2025-03-03 23:13:15 - Received both, sender_id: 2
+logical_clock: 102
+, <grpc._server._Context object at 0x10230c970>
+2025-03-03 23:13:15 - Received request, sender_id: 2
+logical_clock: 102
+
+2025-03-03 23:13:15 - Received both, sender_id: 1
+logical_clock: 95
+, <grpc._server._Context object at 0x10230c310>
+2025-03-03 23:13:15 - Received request, sender_id: 1
+logical_clock: 95
+
+2025-03-03 23:13:16 - [RECEIVED] from Machine 2, Logical clock: 95, Queue length: 1
+2025-03-03 23:13:16 - Received both, sender_id: 1
+logical_clock: 103
+, <grpc._server._Context object at 0x10230c460>
+2025-03-03 23:13:16 - Received request, sender_id: 1
+logical_clock: 103
+
+2025-03-03 23:13:16 - Received both, sender_id: 1
+logical_clock: 104
+, <grpc._server._Context object at 0x10230c1f0>
+2025-03-03 23:13:16 - Received request, sender_id: 1
+logical_clock: 104
+
+2025-03-03 23:13:16 - Received both, sender_id: 2
+logical_clock: 107
+, <grpc._server._Context object at 0x10230c880>
+2025-03-03 23:13:16 - Received request, sender_id: 2
+logical_clock: 107
+
+2025-03-03 23:13:16 - Received both, sender_id: 1
+logical_clock: 105
+, <grpc._server._Context object at 0x10230c310>
+2025-03-03 23:13:16 - Received request, sender_id: 1
+logical_clock: 105
+
+2025-03-03 23:13:17 - Received both, sender_id: 2
+logical_clock: 109
+, <grpc._server._Context object at 0x10230ce80>
+2025-03-03 23:13:17 - Received request, sender_id: 2
+logical_clock: 109
+
+2025-03-03 23:13:17 - [RECEIVED] from Machine 0, Logical clock: 96, Queue length: 1
+2025-03-03 23:13:17 - Received both, sender_id: 2
+logical_clock: 110
+, <grpc._server._Context object at 0x102302f10>
+2025-03-03 23:13:17 - Received request, sender_id: 2
+logical_clock: 110
+
+2025-03-03 23:13:17 - Received both, sender_id: 2
+logical_clock: 112
+, <grpc._server._Context object at 0x10230d430>
+2025-03-03 23:13:17 - Received request, sender_id: 2
+logical_clock: 112
+
+2025-03-03 23:13:18 - Received both, sender_id: 2
+logical_clock: 114
+, <grpc._server._Context object at 0x10230d040>
+2025-03-03 23:13:18 - Received request, sender_id: 2
+logical_clock: 114
+
+2025-03-03 23:13:18 - [SENT] to Machine 2, Logical clock: 96
+2025-03-03 23:13:18 - Received both, sender_id: 1
+logical_clock: 113
+, <grpc._server._Context object at 0x10230c310>
+2025-03-03 23:13:18 - Received request, sender_id: 1
+logical_clock: 113
+
+2025-03-03 23:13:18 - Received both, sender_id: 2
+logical_clock: 115
+, <grpc._server._Context object at 0x10230da30>
+2025-03-03 23:13:18 - Received request, sender_id: 2
+logical_clock: 115
+
+2025-03-03 23:13:18 - Received both, sender_id: 2
+logical_clock: 116
+, <grpc._server._Context object at 0x10230cfd0>
+2025-03-03 23:13:18 - Received request, sender_id: 2
+logical_clock: 116
+
+2025-03-03 23:13:18 - Received both, sender_id: 2
+logical_clock: 117
+, <grpc._server._Context object at 0x10230d0a0>
+2025-03-03 23:13:18 - Received request, sender_id: 2
+logical_clock: 117
+
+2025-03-03 23:13:19 - Received both, sender_id: 1
+logical_clock: 116
+, <grpc._server._Context object at 0x10230d640>
+2025-03-03 23:13:19 - Received request, sender_id: 1
+logical_clock: 116
+
+2025-03-03 23:13:19 - [SENT] to Machine 1, Logical clock: 97
+2025-03-03 23:13:19 - Received both, sender_id: 1
+logical_clock: 119
+, <grpc._server._Context object at 0x10230c850>
+2025-03-03 23:13:19 - Received request, sender_id: 1
+logical_clock: 119
+
+2025-03-03 23:13:20 - [INTERNAL], Logical clock: 99
+2025-03-03 23:13:20 - Received both, sender_id: 2
+logical_clock: 125
+, <grpc._server._Context object at 0x10230d130>
+2025-03-03 23:13:20 - Received request, sender_id: 2
+logical_clock: 125
+
+2025-03-03 23:13:21 - Received both, sender_id: 2
+logical_clock: 129
+, <grpc._server._Context object at 0x10230cee0>
+2025-03-03 23:13:21 - Received request, sender_id: 2
+logical_clock: 129
+
+2025-03-03 23:13:21 - [INTERNAL], Logical clock: 100
+2025-03-03 23:13:21 - Received both, sender_id: 2
+logical_clock: 131
+, <grpc._server._Context object at 0x10230d670>
+2025-03-03 23:13:21 - Received request, sender_id: 2
+logical_clock: 131
+
+2025-03-03 23:13:22 - Received both, sender_id: 2
+logical_clock: 134
+, <grpc._server._Context object at 0x10230d5b0>
+2025-03-03 23:13:22 - Received request, sender_id: 2
+logical_clock: 134
+
+2025-03-03 23:13:22 - [RECEIVED] from Machine 0, Logical clock: 101, Queue length: 0
+2025-03-03 23:13:22 - Received both, sender_id: 2
+logical_clock: 135
+, <grpc._server._Context object at 0x102302400>
+2025-03-03 23:13:22 - Received request, sender_id: 2
+logical_clock: 135
+
+2025-03-03 23:13:23 - Received both, sender_id: 2
+logical_clock: 138
+, <grpc._server._Context object at 0x10230c760>
+2025-03-03 23:13:23 - Received request, sender_id: 2
+logical_clock: 138
+
+2025-03-03 23:13:23 - [RECEIVED] from Machine 2, Logical clock: 139, Queue length: 0
+2025-03-03 23:13:23 - Received both, sender_id: 2
+logical_clock: 140
+, <grpc._server._Context object at 0x10230d220>
+2025-03-03 23:13:23 - Received request, sender_id: 2
+logical_clock: 140
+
+2025-03-03 23:13:23 - Received both, sender_id: 1
+logical_clock: 139
+, <grpc._server._Context object at 0x10230da90>
+2025-03-03 23:13:23 - Received request, sender_id: 1
+logical_clock: 139
+
+2025-03-03 23:13:24 - Received both, sender_id: 2
+logical_clock: 143
+, <grpc._server._Context object at 0x10230c310>
+2025-03-03 23:13:24 - Received request, sender_id: 2
+logical_clock: 143
+
+2025-03-03 23:13:24 - Received both, sender_id: 1
+logical_clock: 141
+, <grpc._server._Context object at 0x10230dd00>
+2025-03-03 23:13:24 - Received request, sender_id: 1
+logical_clock: 141
+
+2025-03-03 23:13:24 - Received both, sender_id: 2
+logical_clock: 144
+, <grpc._server._Context object at 0x10230d1f0>
+2025-03-03 23:13:24 - Received request, sender_id: 2
+logical_clock: 144
+
+2025-03-03 23:13:24 - [SENT] to Machine 1, Logical clock: 139
+2025-03-03 23:13:24 - Received both, sender_id: 1
+logical_clock: 144
+, <grpc._server._Context object at 0x10230cfd0>
+2025-03-03 23:13:24 - Received request, sender_id: 1
+logical_clock: 144
+
+2025-03-03 23:13:25 - Received both, sender_id: 2
+logical_clock: 149
+, <grpc._server._Context object at 0x10230de20>
+2025-03-03 23:13:25 - Received request, sender_id: 2
+logical_clock: 149
+
+2025-03-03 23:13:25 - [SENT] to Machine 1, Logical clock: 140
+2025-03-03 23:13:25 - Received both, sender_id: 2
+logical_clock: 150
+, <grpc._server._Context object at 0x10230d1f0>
+2025-03-03 23:13:25 - Received request, sender_id: 2
+logical_clock: 150
+
+2025-03-03 23:13:25 - Received both, sender_id: 2
+logical_clock: 151
+, <grpc._server._Context object at 0x10230d8b0>
+2025-03-03 23:13:25 - Received request, sender_id: 2
+logical_clock: 151
+
+2025-03-03 23:13:25 - Received both, sender_id: 2
+logical_clock: 152
+, <grpc._server._Context object at 0x10230df40>
+2025-03-03 23:13:25 - Received request, sender_id: 2
+logical_clock: 152
+
+2025-03-03 23:13:26 - Received both, sender_id: 2
+logical_clock: 153
+, <grpc._server._Context object at 0x10230d400>
+2025-03-03 23:13:26 - Received request, sender_id: 2
+logical_clock: 153
+
+2025-03-03 23:13:26 - [RECEIVED] from Machine 2, Logical clock: 151, Queue length: 1
+2025-03-03 23:13:26 - Received both, sender_id: 2
+logical_clock: 155
+, <grpc._server._Context object at 0x102302ca0>
+2025-03-03 23:13:26 - Received request, sender_id: 2
+logical_clock: 155
+
+2025-03-03 23:13:26 - Received both, sender_id: 2
+logical_clock: 157
+, <grpc._server._Context object at 0x10230d0a0>
+2025-03-03 23:13:26 - Received request, sender_id: 2
+logical_clock: 157
+
+2025-03-03 23:13:26 - Received both, sender_id: 1
+logical_clock: 152
+, <grpc._server._Context object at 0x10230db20>
+2025-03-03 23:13:26 - Received request, sender_id: 1
+logical_clock: 152
+
+2025-03-03 23:13:27 - Received both, sender_id: 1
+logical_clock: 153
+, <grpc._server._Context object at 0x1022dff40>
+2025-03-03 23:13:27 - Received request, sender_id: 1
+logical_clock: 153
+
+2025-03-03 23:13:27 - Received both, sender_id: 2
+logical_clock: 159
+, <grpc._server._Context object at 0x10230e070>
+2025-03-03 23:13:27 - Received request, sender_id: 2
+logical_clock: 159
+
+2025-03-03 23:13:27 - [RECEIVED] from Machine 2, Logical clock: 152, Queue length: 1
+2025-03-03 23:13:28 - Received both, sender_id: 1
+logical_clock: 162
+, <grpc._server._Context object at 0x10230d3a0>
+2025-03-03 23:13:28 - Received request, sender_id: 1
+logical_clock: 162
+
+2025-03-03 23:13:28 - [SENT] to Machine 1, Logical clock: 152
+2025-03-03 23:13:28 - Received both, sender_id: 2
+logical_clock: 165
+, <grpc._server._Context object at 0x10230dc70>
+2025-03-03 23:13:28 - Received request, sender_id: 2
+logical_clock: 165
+
+2025-03-03 23:13:28 - Received both, sender_id: 2
+logical_clock: 166
+, <grpc._server._Context object at 0x10230d430>
+2025-03-03 23:13:28 - Received request, sender_id: 2
+logical_clock: 166
+
+2025-03-03 23:13:28 - Received both, sender_id: 2
+logical_clock: 167
+, <grpc._server._Context object at 0x10230d8e0>
+2025-03-03 23:13:28 - Received request, sender_id: 2
+logical_clock: 167
+
+2025-03-03 23:13:28 - Received both, sender_id: 1
+logical_clock: 165
+, <grpc._server._Context object at 0x10230de20>
+2025-03-03 23:13:28 - Received request, sender_id: 1
+logical_clock: 165
+
+2025-03-03 23:13:29 - Received both, sender_id: 1
+logical_clock: 166
+, <grpc._server._Context object at 0x10230d160>
+2025-03-03 23:13:29 - Received request, sender_id: 1
+logical_clock: 166
+
+2025-03-03 23:13:29 - Received both, sender_id: 2
+logical_clock: 169
+, <grpc._server._Context object at 0x10230da90>
+2025-03-03 23:13:29 - Received request, sender_id: 2
+logical_clock: 169
+
+2025-03-03 23:13:29 - [RECEIVED] from Machine 2, Logical clock: 167, Queue length: 1
+2025-03-03 23:13:30 - Received both, sender_id: 1
+logical_clock: 170
+, <grpc._server._Context object at 0x10230df70>
+2025-03-03 23:13:30 - Received request, sender_id: 1
+logical_clock: 170
+
+2025-03-03 23:13:30 - [INTERNAL], Logical clock: 168
+2025-03-03 23:13:30 - Received both, sender_id: 2
+logical_clock: 175
+, <grpc._server._Context object at 0x10230ce80>
+2025-03-03 23:13:30 - Received request, sender_id: 2
+logical_clock: 175
+
+2025-03-03 23:13:31 - Received both, sender_id: 1
+logical_clock: 174
+, <grpc._server._Context object at 0x10230dd30>
+2025-03-03 23:13:31 - Received request, sender_id: 1
+logical_clock: 174
+
+2025-03-03 23:13:31 - [RECEIVED] from Machine 1, Logical clock: 171, Queue length: 1
+2025-03-03 23:13:31 - Received both, sender_id: 1
+logical_clock: 175
+, <grpc._server._Context object at 0x10230d040>
+2025-03-03 23:13:31 - Received request, sender_id: 1
+logical_clock: 175
+
+2025-03-03 23:13:31 - Received both, sender_id: 2
+logical_clock: 181
+, <grpc._server._Context object at 0x10230c400>
+2025-03-03 23:13:31 - Received request, sender_id: 2
+logical_clock: 181
+
+2025-03-03 23:13:31 - Received both, sender_id: 1
+logical_clock: 176
+, <grpc._server._Context object at 0x10230da00>
+2025-03-03 23:13:31 - Received request, sender_id: 1
+logical_clock: 176
+
+2025-03-03 23:13:31 - Received both, sender_id: 2
+logical_clock: 182
+, <grpc._server._Context object at 0x10230da90>
+2025-03-03 23:13:31 - Received request, sender_id: 2
+logical_clock: 182
+
+2025-03-03 23:13:32 - [INTERNAL], Logical clock: 172
+2025-03-03 23:13:32 - Received both, sender_id: 2
+logical_clock: 187
+, <grpc._server._Context object at 0x10230c8e0>
+2025-03-03 23:13:32 - Received request, sender_id: 2
+logical_clock: 187
+
+2025-03-03 23:13:33 - Received both, sender_id: 1
+logical_clock: 188
+, <grpc._server._Context object at 0x10230dc40>
+2025-03-03 23:13:33 - Received request, sender_id: 1
+logical_clock: 188
+
+2025-03-03 23:13:33 - [SENT] to Machine 1, Logical clock: 172
+2025-03-03 23:13:33 - [SENT] to Machine 2, Logical clock: 172
+2025-03-03 23:13:33 - Received both, sender_id: 2
+logical_clock: 190
+, <grpc._server._Context object at 0x10230d940>
+2025-03-03 23:13:33 - Received request, sender_id: 2
+logical_clock: 190
+
+2025-03-03 23:13:33 - Received both, sender_id: 2
+logical_clock: 191
+, <grpc._server._Context object at 0x10230e4c0>
+2025-03-03 23:13:33 - Received request, sender_id: 2
+logical_clock: 191
+
+2025-03-03 23:13:34 - Received both, sender_id: 1
+logical_clock: 191
+, <grpc._server._Context object at 0x10230c8e0>
+2025-03-03 23:13:34 - Received request, sender_id: 1
+logical_clock: 191
+
+2025-03-03 23:13:34 - Received both, sender_id: 1
+logical_clock: 192
+, <grpc._server._Context object at 0x10230d610>
+2025-03-03 23:13:34 - Received request, sender_id: 1
+logical_clock: 192
+
+2025-03-03 23:13:34 - [RECEIVED] from Machine 1, Logical clock: 192, Queue length: 1
+2025-03-03 23:13:34 - Received both, sender_id: 1
+logical_clock: 194
+, <grpc._server._Context object at 0x10230de20>
+2025-03-03 23:13:34 - Received request, sender_id: 1
+logical_clock: 194
+
+2025-03-03 23:13:34 - Received both, sender_id: 2
+logical_clock: 197
+, <grpc._server._Context object at 0x10230d220>
+2025-03-03 23:13:34 - Received request, sender_id: 2
+logical_clock: 197
+
+2025-03-03 23:13:35 - Received both, sender_id: 1
+logical_clock: 196
+, <grpc._server._Context object at 0x10230e5e0>
+2025-03-03 23:13:35 - Received request, sender_id: 1
+logical_clock: 196
+
+2025-03-03 23:13:35 - Received both, sender_id: 2
+logical_clock: 199
+, <grpc._server._Context object at 0x10230dc40>
+2025-03-03 23:13:35 - Received request, sender_id: 2
+logical_clock: 199
+
+2025-03-03 23:13:35 - [INTERNAL], Logical clock: 193
+2025-03-03 23:13:36 - Received both, sender_id: 1
+logical_clock: 200
+, <grpc._server._Context object at 0x10230d3a0>
+2025-03-03 23:13:36 - Received request, sender_id: 1
+logical_clock: 200
+
+2025-03-03 23:13:36 - Received both, sender_id: 2
+logical_clock: 204
+, <grpc._server._Context object at 0x10230de50>
+2025-03-03 23:13:36 - Received request, sender_id: 2
+logical_clock: 204
+
+2025-03-03 23:13:36 - [INTERNAL], Logical clock: 194
+2025-03-03 23:13:37 - Received both, sender_id: 1
+logical_clock: 203
+, <grpc._server._Context object at 0x10230e130>
+2025-03-03 23:13:37 - Received request, sender_id: 1
+logical_clock: 203
+
+2025-03-03 23:13:37 - Received both, sender_id: 2
+logical_clock: 208
+, <grpc._server._Context object at 0x10230e880>
+2025-03-03 23:13:37 - Received request, sender_id: 2
+logical_clock: 208
+
+2025-03-03 23:13:37 - Received both, sender_id: 2
+logical_clock: 209
+, <grpc._server._Context object at 0x10230e610>
+2025-03-03 23:13:37 - Received request, sender_id: 2
+logical_clock: 209
+
+2025-03-03 23:13:37 - [RECEIVED] from Machine 2, Logical clock: 195, Queue length: 0
+2025-03-03 23:13:38 - Received both, sender_id: 2
+logical_clock: 213
+, <grpc._server._Context object at 0x10230e7c0>
+2025-03-03 23:13:38 - Received request, sender_id: 2
+logical_clock: 213
+
+2025-03-03 23:13:38 - Received both, sender_id: 1
+logical_clock: 212
+, <grpc._server._Context object at 0x10230e430>
+2025-03-03 23:13:38 - Received request, sender_id: 1
+logical_clock: 212
+
+2025-03-03 23:13:38 - [INTERNAL], Logical clock: 196
+2025-03-03 23:13:38 - Received both, sender_id: 1
+logical_clock: 213
+, <grpc._server._Context object at 0x10230e190>
+2025-03-03 23:13:38 - Received request, sender_id: 1
+logical_clock: 213
+
+2025-03-03 23:13:38 - Received both, sender_id: 2
+logical_clock: 216
+, <grpc._server._Context object at 0x10230de20>
+2025-03-03 23:13:38 - Received request, sender_id: 2
+logical_clock: 216
+
+2025-03-03 23:13:39 - [RECEIVED] from Machine 1, Logical clock: 214, Queue length: 1
+2025-03-03 23:13:39 - Received both, sender_id: 2
+logical_clock: 220
+, <grpc._server._Context object at 0x10230e820>
+2025-03-03 23:13:39 - Received request, sender_id: 2
+logical_clock: 220
+
+2025-03-03 23:13:39 - Received both, sender_id: 1
+logical_clock: 217
+, <grpc._server._Context object at 0x10230de20>
+2025-03-03 23:13:39 - Received request, sender_id: 1
+logical_clock: 217
+
+2025-03-03 23:13:39 - Received both, sender_id: 1
+logical_clock: 218
+, <grpc._server._Context object at 0x10230e6d0>
+2025-03-03 23:13:39 - Received request, sender_id: 1
+logical_clock: 218
+
+2025-03-03 23:13:40 - Received both, sender_id: 2
+logical_clock: 224
+, <grpc._server._Context object at 0x1022f8af0>
+2025-03-03 23:13:40 - Received request, sender_id: 2
+logical_clock: 224
+
+2025-03-03 23:13:40 - [RECEIVED] from Machine 1, Logical clock: 219, Queue length: 0
+2025-03-03 23:13:41 - [SENT] to Machine 1, Logical clock: 219
+2025-03-03 23:13:41 - Received both, sender_id: 1
+logical_clock: 229
+, <grpc._server._Context object at 0x10230e700>
+2025-03-03 23:13:41 - Received request, sender_id: 1
+logical_clock: 229
+
+2025-03-03 23:13:41 - Received both, sender_id: 2
+logical_clock: 232
+, <grpc._server._Context object at 0x10230e730>
+2025-03-03 23:13:41 - Received request, sender_id: 2
+logical_clock: 232
+
+2025-03-03 23:13:42 - [RECEIVED] from Machine 2, Logical clock: 227, Queue length: 0
+2025-03-03 23:13:42 - Received both, sender_id: 2
+logical_clock: 236
+, <grpc._server._Context object at 0x10230e400>
+2025-03-03 23:13:42 - Received request, sender_id: 2
+logical_clock: 236
+
+2025-03-03 23:13:42 - Received both, sender_id: 1
+logical_clock: 233
+, <grpc._server._Context object at 0x10230ebe0>
+2025-03-03 23:13:42 - Received request, sender_id: 1
+logical_clock: 233
+
+2025-03-03 23:13:42 - Received both, sender_id: 2
+logical_clock: 237
+, <grpc._server._Context object at 0x10230eac0>
+2025-03-03 23:13:42 - Received request, sender_id: 2
+logical_clock: 237
+
+2025-03-03 23:13:43 - Received both, sender_id: 2
+logical_clock: 239
+, <grpc._server._Context object at 0x10230ebb0>
+2025-03-03 23:13:43 - Received request, sender_id: 2
+logical_clock: 239
+
+2025-03-03 23:13:43 - [INTERNAL], Logical clock: 228
+2025-03-03 23:13:43 - Received both, sender_id: 1
+logical_clock: 236
+, <grpc._server._Context object at 0x10230d370>
+2025-03-03 23:13:43 - Received request, sender_id: 1
+logical_clock: 236
+
+2025-03-03 23:13:44 - Received both, sender_id: 1
+logical_clock: 239
+, <grpc._server._Context object at 0x10230d790>
+2025-03-03 23:13:44 - Received request, sender_id: 1
+logical_clock: 239
+
+2025-03-03 23:13:44 - Received both, sender_id: 2
+logical_clock: 244
+, <grpc._server._Context object at 0x10230ebe0>
+2025-03-03 23:13:44 - Received request, sender_id: 2
+logical_clock: 244
+
+2025-03-03 23:13:44 - [SENT] to Machine 1, Logical clock: 228
+2025-03-03 23:13:44 - Received both, sender_id: 1
+logical_clock: 241
+, <grpc._server._Context object at 0x10230eeb0>
+2025-03-03 23:13:44 - Received request, sender_id: 1
+logical_clock: 241
+
+2025-03-03 23:13:45 - Received both, sender_id: 1
+logical_clock: 242
+, <grpc._server._Context object at 0x10230e6d0>
+2025-03-03 23:13:45 - Received request, sender_id: 1
+logical_clock: 242
+
+2025-03-03 23:13:45 - Received both, sender_id: 1
+logical_clock: 243
+, <grpc._server._Context object at 0x10230c400>
+2025-03-03 23:13:45 - Received request, sender_id: 1
+logical_clock: 243
+
+2025-03-03 23:13:45 - [RECEIVED] from Machine 1, Logical clock: 242, Queue length: 0
+2025-03-03 23:13:45 - Received both, sender_id: 1
+logical_clock: 244
+, <grpc._server._Context object at 0x10230da60>
+2025-03-03 23:13:45 - Received request, sender_id: 1
+logical_clock: 244
+
+2025-03-03 23:13:46 - [RECEIVED] from Machine 1, Logical clock: 243, Queue length: 1

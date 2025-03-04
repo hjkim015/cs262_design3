@@ -1,0 +1,8 @@
+2025-03-03 23:01:12 - [INIT] with clock rate 1 and peers ['localhost:50050', 'localhost:50052']
+2025-03-03 23:01:14 - [INTERNAL], Logical clock: 1
+2025-03-03 23:01:15 - [INTERNAL], Logical clock: 2
+2025-03-03 23:01:16 - [INTERNAL], Logical clock: 3
+2025-03-03 23:01:17 - [SENT] to Machine 0, Logical clock: 3
+2025-03-03 23:01:18 - [RECEIVED] from Machine 2, Logical clock: 8, Queue length: 1
+2025-03-03 23:01:19 - [RECEIVED] from Machine 2, Logical clock: 18, Queue length: 0
+2025-03-03 23:01:20 - [RECEIVED] from Machine 2, Logical clock: 19, Queue length: 0

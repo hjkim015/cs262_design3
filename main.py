@@ -5,29 +5,34 @@ from machine import Machine
 import yaml
 
 # Load config
-with open("config.yaml", "r") as f:
+with open("experiment_config.yaml", "r") as f:
     config = yaml.safe_load(f)
-    t1 = config["t1"]
-    t2 = config["t2"]
-    t3 = config["t3"]
+    PROB_MSG_A = config["PROB_MSG_A"]
+    PROB_MSG_B = config["PROB_MSG_B"]
+    PROB_MSG_C = config["PROB_MSG_C"]
+    N_MACHINES = config["N_MACHINES"]
+    N_TRIALS = config["N_TRIALS"]
+    DURATION = config["DURATION"]
+    CYCLE_MAX = config["CYCLE_MAX"]
+    BASE_PORT = config["BASE_PORT"]
 
 def start_peer(machine_id, port, clock_rate, peer_addresses):
     machine = Machine(machine_id, clock_rate, peer_addresses)
-    machine.run(port, t1, t2, t3)
+    machine.run(port, PROB_MSG_A, PROB_MSG_B, PROB_MSG_C)
 
 if __name__ == "__main__":
-    num_machines = 3
-    base_port = 50050
-    peer_addresses = [f"localhost:{base_port + i}" for i in range(num_machines)]
+    peer_addresses = [f"localhost:{BASE_PORT + i}" for i in range(N_MACHINES)]
 
+    for _ in range(N_TRIALS):
+    # TODO: kill at 60 seconds
+    # TODO: create new logging folder for each run
 
-    
-    processes = []
-    for i in range(num_machines):
-        clock_rate = random.randint(1, 6)  # Random clock ticks per second
-        p = multiprocessing.Process(target=start_peer, args=(i, base_port + i, clock_rate, peer_addresses))
-        processes.append(p)
-        p.start()
+        processes = []
+        for i in range(N_MACHINES):
+            clock_rate = random.randint(1, CYCLE_MAX)  # Random clock ticks per second
+            p = multiprocessing.Process(target=start_peer, args=(i, BASE_PORT + i, clock_rate, peer_addresses))
+            processes.append(p)
+            p.start()
 
-    for p in processes:
-        p.join()
+        for p in processes:
+            p.join()

@@ -22,19 +22,18 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0csystem.proto\"3\n\x07Message\x12\x15\n\rlogical_clock\x18\x01 \x01(\x05\x12\x11\n\tsender_id\x18\x02 \x01(\t\"\x1b\n\x08Response\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x31\n\x0bPeerService\x12\"\n\x0bSendMessage\x12\x08.Message\x1a\t.Responseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0csystem.proto\x12\x07machine\x1a\x1bgoogle/protobuf/empty.proto\"3\n\x07Message\x12\x11\n\tsender_id\x18\x01 \x01(\x05\x12\x15\n\rlogical_clock\x18\x02 \x01(\x05\x32\x85\x01\n\x0bPeerService\x12\x37\n\x0bSendMessage\x12\x10.machine.Message\x1a\x16.google.protobuf.Empty\x12=\n\x0fReceiveMessages\x12\x16.google.protobuf.Empty\x1a\x10.machine.Message0\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'system_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_MESSAGE']._serialized_start=16
-  _globals['_MESSAGE']._serialized_end=67
-  _globals['_RESPONSE']._serialized_start=69
-  _globals['_RESPONSE']._serialized_end=96
-  _globals['_PEERSERVICE']._serialized_start=98
-  _globals['_PEERSERVICE']._serialized_end=147
+  _globals['_MESSAGE']._serialized_start=54
+  _globals['_MESSAGE']._serialized_end=105
+  _globals['_PEERSERVICE']._serialized_start=108
+  _globals['_PEERSERVICE']._serialized_end=241
 # @@protoc_insertion_point(module_scope)

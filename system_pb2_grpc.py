@@ -3,6 +3,7 @@
 import grpc
 import warnings
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import system_pb2 as system__pb2
 
 GRPC_GENERATED_VERSION = '1.70.0'
@@ -35,9 +36,14 @@ class PeerServiceStub(object):
             channel: A grpc.Channel.
         """
         self.SendMessage = channel.unary_unary(
-                '/PeerService/SendMessage',
+                '/machine.PeerService/SendMessage',
                 request_serializer=system__pb2.Message.SerializeToString,
-                response_deserializer=system__pb2.Response.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                _registered_method=True)
+        self.ReceiveMessages = channel.unary_stream(
+                '/machine.PeerService/ReceiveMessages',
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=system__pb2.Message.FromString,
                 _registered_method=True)
 
 
@@ -45,7 +51,15 @@ class PeerServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def SendMessage(self, request, context):
-        """Missing associated documentation comment in .proto file."""
+        """Unary call to send a message to a peer
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def ReceiveMessages(self, request, context):
+        """Server-streaming call to receive messages from a peer
+        """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
@@ -56,13 +70,18 @@ def add_PeerServiceServicer_to_server(servicer, server):
             'SendMessage': grpc.unary_unary_rpc_method_handler(
                     servicer.SendMessage,
                     request_deserializer=system__pb2.Message.FromString,
-                    response_serializer=system__pb2.Response.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'ReceiveMessages': grpc.unary_stream_rpc_method_handler(
+                    servicer.ReceiveMessages,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=system__pb2.Message.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'PeerService', rpc_method_handlers)
+            'machine.PeerService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
-    server.add_registered_method_handlers('PeerService', rpc_method_handlers)
+    server.add_registered_method_handlers('machine.PeerService', rpc_method_handlers)
 
 
  # This class is part of an EXPERIMENTAL API.
@@ -83,9 +102,36 @@ class PeerService(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/PeerService/SendMessage',
+            '/machine.PeerService/SendMessage',
             system__pb2.Message.SerializeToString,
-            system__pb2.Response.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def ReceiveMessages(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_stream(
+            request,
+            target,
+            '/machine.PeerService/ReceiveMessages',
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            system__pb2.Message.FromString,
             options,
             channel_credentials,
             insecure,

@@ -3,6 +3,8 @@ import time
 import random
 from machine import Machine
 import yaml
+import threading
+import os
 
 # Load config
 with open("experiment_config.yaml", "r") as f:
@@ -16,23 +18,42 @@ with open("experiment_config.yaml", "r") as f:
     CYCLE_MAX = config["CYCLE_MAX"]
     BASE_PORT = config["BASE_PORT"]
 
-def start_peer(machine_id, port, clock_rate, peer_addresses):
-    machine = Machine(machine_id, clock_rate, peer_addresses)
-    machine.run(port, PROB_MSG_A, PROB_MSG_B, PROB_MSG_C)
 
 if __name__ == "__main__":
-    peer_addresses = [f"localhost:{BASE_PORT + i}" for i in range(N_MACHINES)]
+    for trial in range(N_TRIALS):
+        # Create a unique logging folder for each run
+        log_folder = f"logs/run_{int(time.time())}"
+        os.makedirs(log_folder, exist_ok=True)
 
-    for _ in range(N_TRIALS):
-    # TODO: kill at 60 seconds
-    # TODO: create new logging folder for each run
+        ports = [f"localhost:{BASE_PORT + i}" for i in range(N_MACHINES)]
+        machines = []
 
-        processes = []
         for i in range(N_MACHINES):
+            my_port = BASE_PORT + i
             clock_rate = random.randint(1, CYCLE_MAX)  # Random clock ticks per second
-            p = multiprocessing.Process(target=start_peer, args=(i, BASE_PORT + i, clock_rate, peer_addresses))
-            processes.append(p)
-            p.start()
+            # TODO rm self from peer addresses, make peers just int not localhost etc
+            peers = []
+            for j in range(N_MACHINES):
+                if j != i:
+                    peers.append(f"localhost:{BASE_PORT + j}")
+            m = Machine(i, my_port, clock_rate, peers, log_path=log_folder)
+            machines.append(m)
 
-        for p in processes:
-            p.join()
+        threads = []
+        for m in machines:
+            t = threading.Thread(target=m.run, args=(PROB_MSG_A,PROB_MSG_B,PROB_MSG_C),daemon=True)
+            t.start()
+            threads.append(t)
+
+        # Allow threads to run for RUN_DURATION seconds
+        time.sleep(DURATION)
+
+        # Stop all machines
+        for m in machines:
+            m.stop()
+
+        # Wait for them to shut down
+        for t in threads:
+            t.join()
+
+    print("All machines have stopped.")

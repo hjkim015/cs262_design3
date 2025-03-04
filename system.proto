@@ -1,14 +1,18 @@
 syntax = "proto3";
 
-service PeerService{
-    rpc SendMessage(Message) returns (Response);
+package machine;
+
+import "google/protobuf/empty.proto";
+
+message Message {
+  int32 sender_id = 1;
+  int32 logical_clock = 2;
 }
 
-message Message{
-    int32 logical_clock = 1;
-    string sender_id = 2;
-}
+service PeerService {
+  // Unary call to send a message to a peer
+  rpc SendMessage(Message) returns (google.protobuf.Empty);
 
-message Response{
-    bool success = 1;
+  // Server-streaming call to receive messages from a peer
+  rpc ReceiveMessages(google.protobuf.Empty) returns (stream Message);
 }

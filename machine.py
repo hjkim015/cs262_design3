@@ -21,7 +21,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         # Initialize the machine ID, peer addresses, and message queue
         self.machine_id = machine_id
         self.peers = peers # list of peer addresses
-        self.queue = Queue()
+        self.message_queue = Queue()
 
         # Initialize the logger
         if not os.path.exists(log_path):
@@ -34,7 +34,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         # Write first log message
         self.logger.info(f"[INIT] with clock rate {self.clock_rate} and peers {self.peers}")    
 
-    def receive_message(self, request, context):
+    def _receive_message(self, request, context):
         """Listen for incoming messages"""
         # self.logical_clock = max(self.logical_clock, request.logical_clock) + 1
 
@@ -61,25 +61,44 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         process.start()
 
         while True:
-            time.sleep(1 / self.clock_rate)  # Simulate clock speed
-            self.logical_clock += 1  # Internal event
+            # Bookkeeping
+            start = time.time()
 
+            # Check for incoming messages
             message = 0
-            message = self.queue.get()            
+            # message = self.queue.get()            
             if message:
-                now = time.time()
-                self.logger.info(f"[RECEIVED] from Machine {message.sender_id}, Logical clock: {message.logical_clock}, Queue length: {len(self.queue)}")
+                
+                # Update clock according to Lamport
+                self.logical_clock = max(self.logical_clock, message.logical_clock) + 1
+
+                # Get queue length
+                queue_length = self.message_queue.qsize()
+
+                # Log the message
+                self.logger.info(f"[RECEIVED] from Machine {message.sender_id}, Logical clock: {message.logical_clock}, Queue length: {queue_length}")
+            # Generate random action
             else:
+                # TODO: modify for >3 peers, change threshold names
                 action = random.randint(1, 10)
                 if action < t1:
-                    self.send_message(self.peers[1])
+                    self._send_message(self.peers[0])
+                    self.logical_clock += 1
                 elif action < t2:
-                    self.send_message(self.peers[2])
+                    self._send_message(self.peers[1])
+                    self.logical_clock += 1
                 elif action < t3: 
-                    pass
+                    for i in self.peers:
+                        self._send_message(i)
+                    self.logical_clock += 1
+                # Trigger an internal event
                 else:
-                    #Trigger an internal event 
+                    self.logical_clock += 1
                     self.logger.info(f"[INTERNAL], Logical clock: {message.logical_clock}")
+
+            # Bookkeeping
+            end = time.time()
+            time.sleep(self.cycle_time - (end - start))
 
     def send_message(self, target):
         """Send a message to another machine."""

@@ -1,6 +1,4 @@
 import grpc
-from concurrent import futures
-import multiprocessing
 import random
 import time
 import system_pb2
@@ -12,10 +10,9 @@ import queue
 import threading
 import os
 from google.protobuf import empty_pb2
-import sys
 
 class Machine(system_pb2_grpc.PeerServiceServicer):
-    def __init__(self, machine_id, port, clock_rate, peers, peers_id, log_path=None):
+    def __init__(self, machine_id: int, port: str, clock_rate: int, peers: list, peers_id: list, log_path=None):
         """Initialize the machine."""
         # Initialize the logical clock
         self.logical_clock = 0
@@ -24,8 +21,8 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         
         # Initialize the machine ID, peer addresses, and message queue
         self.machine_id = machine_id
-        self.peers = peers # list of peer addresses
-        self.peers_id = peers_id
+        self.peers = peers # list of peer addresses: ["localhost:50051", "localhost:50052"]
+        self.peers_id = peers_id # list of peer ids: [0, 1]
         self.port = port
         self._channels = [] # list of channels to peers
         self._stubs = [] # list of stubs to peers
@@ -33,7 +30,9 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         self.message_queue = Queue()
         self._stop_event = threading.Event()
         
+        # Flag to indicate if the machine is running
         self.running = False
+        # Last message sent by machine
         self.last_sent_message = None
 
         # Initialize the logger
@@ -48,17 +47,18 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         self.logger.info(f"[INIT] with clock rate {self.clock_rate} and peers {self.peers}, {self.peers_id}") 
 
     def SendMessage(self, request, context):
-        """Receive a message (unary) from a peer and enqueue it."""
+        """Receive a SendMessage request (unary) from a peer and enqueue it."""
         self.message_queue.put(request)
         return empty_pb2.Empty()
     
     def ReceiveMessages(self, request, context):
-        """Stream messages to a peer from this machine's queue."""
+        """Stream messages to a peer requesting ReceiveMessages from this machine's queue."""
         while not self._stop_event.is_set():
             try:
+                # If there is a message to send, yield it
                 if self.last_sent_message is not None:
                     msg = self.last_sent_message
-                    self.last_sent_message = None
+                    self.last_sent_message = None # Reset the last sent message
                     yield msg
             except queue.Empty:
                 pass
@@ -84,6 +84,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         # Give time for all machines to start up
         time.sleep(2)
 
+        # Set the running flag
         self.running = True
 
     def run(self, p_a, p_b, p_c):
@@ -91,9 +92,10 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         p_a: probability threshold for sending msg to machine A
         p_b: probability threshold for sending msg to machine B
         p_c: probability threshold for sending msg to both machines
-        above t3: internal event
+        above p_c: internal event
         """
 
+        # Start the server and connect to peers
         self._start_server()
 
         while self.running:
@@ -114,7 +116,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
                 self.logger.info(f"[RECEIVED] from Machine {message.sender_id}, Logical clock: {self.logical_clock}, Queue length: {queue_length}")
             # Generate random action
             else:
-                # TODO: modify for >3 peers, change threshold names
+                # TODO: modify for >3 peers
                 action = random.randint(1, 10)
                 if action < p_a:
                     self._send_message(0)
@@ -138,8 +140,10 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
     def _send_message(self, target):
         """Send a message to peer via unary calls."""
         try:
+            # Identify target peer's stub
             stub = self._stubs[target]
             msg = system_pb2.Message(sender_id=self.machine_id, logical_clock=self.logical_clock)
+            # Send message to target peer
             stub.SendMessage(msg)
             self.logger.info(f"[SENT] to Machine {self.peers_id[target]}, Logical clock: {self.logical_clock}")
             self.last_sent_message = msg

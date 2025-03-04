@@ -1,15 +1,12 @@
 import re
-import logging
-import os
 import sys
-import yaml
 import json
 import pandas as pd
 
+# Pattern to match timestamps from log
 TIMESTAMP_PATTERN = re.compile(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}")
 
-# Load the log file
-def load_log_file(log_file):
+def load_log_file(log_file: str):
     """Load the log file and return the log entries."""
     with open(log_file, "r") as f:
         lines = f.readlines()
@@ -17,12 +14,12 @@ def load_log_file(log_file):
     # Return list of log entries
     return lines
 
-def get_clock_rate(init_line):
+def get_clock_rate(init_line: str):
     """Get the clock rate from the initialization line."""
     cr = re.search(r"with clock rate (\d+)", init_line)
     return cr
 
-def parse_machine_log(lines):
+def parse_machine_log(lines: list):
     """Parse machine log into a dataframe"""
     # Initialize the list of rows
     row_list = []
@@ -48,6 +45,7 @@ def parse_machine_log(lines):
     return df
 
 def main(log_path):
+    """Main function to parse the log files for a single run."""
 
     # Load log files
     m0_logs = load_log_file(f"{log_path}/machine_0.log")

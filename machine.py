@@ -137,7 +137,6 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
             stub = self._stubs[target]
             msg = system_pb2.Message(sender_id=self.machine_id, logical_clock=self.logical_clock)
             stub.SendMessage(msg)
-            self.logger.info(f"[SENT] to Machine {target}, Logical clock: {self.logical_clock}")
         except grpc.RpcError as e:
             self.logger.error(f"{e}")
 

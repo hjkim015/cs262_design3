@@ -1,0 +1,61 @@
+2025-03-03 22:47:17 - [INIT] with clock rate 1 and peers ['localhost:50050', 'localhost:50051']
+2025-03-03 22:47:19 - [INTERNAL], Logical clock: 1
+2025-03-03 22:47:20 - [INTERNAL], Logical clock: 2
+2025-03-03 22:47:21 - [SENT] to Machine 0, Logical clock: 2
+2025-03-03 22:47:22 - [SENT] to Machine 0, Logical clock: 3
+2025-03-03 22:47:23 - [RECEIVED] from Machine 1, Logical clock: 5, Queue length: 1
+2025-03-03 22:47:24 - [SENT] to Machine 1, Logical clock: 5
+2025-03-03 22:47:25 - [SENT] to Machine 0, Logical clock: 6
+2025-03-03 22:47:26 - [INTERNAL], Logical clock: 8
+2025-03-03 22:47:27 - [SENT] to Machine 0, Logical clock: 8
+2025-03-03 22:47:28 - [RECEIVED] from Machine 1, Logical clock: 10, Queue length: 0
+2025-03-03 22:47:29 - [SENT] to Machine 0, Logical clock: 10
+2025-03-03 22:47:30 - [RECEIVED] from Machine 2, Logical clock: 12, Queue length: 0
+2025-03-03 22:47:31 - [RECEIVED] from Machine 0, Logical clock: 13, Queue length: 0
+2025-03-03 22:47:32 - [SENT] to Machine 0, Logical clock: 13
+2025-03-03 22:47:33 - [RECEIVED] from Machine 1, Logical clock: 15, Queue length: 3
+2025-03-03 22:47:34 - [INTERNAL], Logical clock: 16
+2025-03-03 22:47:35 - [RECEIVED] from Machine 1, Logical clock: 17, Queue length: 0
+2025-03-03 22:47:36 - [SENT] to Machine 0, Logical clock: 17
+2025-03-03 22:47:37 - [SENT] to Machine 0, Logical clock: 18
+2025-03-03 22:47:38 - [RECEIVED] from Machine 2, Logical clock: 20, Queue length: 3
+2025-03-03 22:47:39 - [INTERNAL], Logical clock: 21
+2025-03-03 22:47:40 - [RECEIVED] from Machine 0, Logical clock: 22, Queue length: 1
+2025-03-03 22:47:41 - [RECEIVED] from Machine 1, Logical clock: 23, Queue length: 0
+2025-03-03 22:47:42 - [SENT] to Machine 0, Logical clock: 23
+2025-03-03 22:47:43 - [SENT] to Machine 0, Logical clock: 24
+2025-03-03 22:47:44 - [RECEIVED] from Machine 1, Logical clock: 26, Queue length: 3
+2025-03-03 22:47:45 - [INTERNAL], Logical clock: 27
+2025-03-03 22:47:46 - [INTERNAL], Logical clock: 28
+2025-03-03 22:47:47 - [SENT] to Machine 0, Logical clock: 28
+2025-03-03 22:47:48 - [SENT] to Machine 0, Logical clock: 29
+2025-03-03 22:47:49 - [SENT] to Machine 0, Logical clock: 30
+2025-03-03 22:47:50 - [SENT] to Machine 1, Logical clock: 31
+2025-03-03 22:47:51 - [RECEIVED] from Machine 2, Logical clock: 33, Queue length: 0
+2025-03-03 22:47:52 - [INTERNAL], Logical clock: 34
+2025-03-03 22:47:53 - [SENT] to Machine 0, Logical clock: 34
+2025-03-03 22:47:54 - [SENT] to Machine 0, Logical clock: 35
+2025-03-03 22:47:55 - [RECEIVED] from Machine 0, Logical clock: 37, Queue length: 0
+2025-03-03 22:47:56 - [SENT] to Machine 1, Logical clock: 37
+2025-03-03 22:47:57 - [INTERNAL], Logical clock: 39
+2025-03-03 22:47:58 - [RECEIVED] from Machine 1, Logical clock: 40, Queue length: 0
+2025-03-03 22:47:59 - [SENT] to Machine 0, Logical clock: 40
+2025-03-03 22:48:00 - [SENT] to Machine 0, Logical clock: 41
+2025-03-03 22:48:01 - [SENT] to Machine 0, Logical clock: 42
+2025-03-03 22:48:01 - [SENT] to Machine 1, Logical clock: 42
+2025-03-03 22:48:02 - [SENT] to Machine 1, Logical clock: 43
+2025-03-03 22:48:03 - [INTERNAL], Logical clock: 45
+2025-03-03 22:48:04 - [RECEIVED] from Machine 2, Logical clock: 46, Queue length: 2
+2025-03-03 22:48:05 - [INTERNAL], Logical clock: 47
+2025-03-03 22:48:06 - [RECEIVED] from Machine 2, Logical clock: 48, Queue length: 0
+2025-03-03 22:48:07 - [INTERNAL], Logical clock: 49
+2025-03-03 22:48:08 - [RECEIVED] from Machine 1, Logical clock: 50, Queue length: 0
+2025-03-03 22:48:09 - [SENT] to Machine 0, Logical clock: 50
+2025-03-03 22:48:09 - [SENT] to Machine 1, Logical clock: 50
+2025-03-03 22:48:10 - [SENT] to Machine 0, Logical clock: 51
+2025-03-03 22:48:11 - [SENT] to Machine 0, Logical clock: 52
+2025-03-03 22:48:12 - [INTERNAL], Logical clock: 54
+2025-03-03 22:48:13 - [SENT] to Machine 1, Logical clock: 54
+2025-03-03 22:48:14 - [SENT] to Machine 0, Logical clock: 55
+2025-03-03 22:48:15 - [RECEIVED] from Machine 2, Logical clock: 57, Queue length: 0
+2025-03-03 22:48:16 - [RECEIVED] from Machine 1, Logical clock: 58, Queue length: 1

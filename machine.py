@@ -31,6 +31,8 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         self._receive_threads = [] # list of threads for receiving from peers
         self.message_queue = Queue()
         self._stop_event = threading.Event()
+        
+        self.running = False
 
         # Initialize the logger
         if not os.path.exists(log_path):
@@ -78,6 +80,8 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         # Give time for all machines to start up
         time.sleep(2)
 
+        self.running = True
+
     def run(self, p_a, p_b, p_c):
         """Main loop for processing messages and events
         p_a: probability threshold for sending msg to machine A
@@ -88,7 +92,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
 
         self._start_server()
 
-        while True:
+        while self.running:
             # Bookkeeping
             start = time.time()
 
@@ -103,7 +107,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
                 queue_length = self.message_queue.qsize()
 
                 # Log the message
-                self.logger.info(f"[RECEIVED] from Machine {message.sender_id}, Logical clock: {message.logical_clock}, Queue length: {queue_length}")
+                self.logger.info(f"[RECEIVED] from Machine {message.sender_id}, Logical clock: {self.logical_clock}, Queue length: {queue_length}")
             # Generate random action
             else:
                 # TODO: modify for >3 peers, change threshold names
@@ -149,6 +153,7 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
         
     def stop(self):
         """Signal stop, close channels, and end run loop."""
+        self.running = False
         self._stop_event.set()
         for ch in self._channels:
             ch.close()

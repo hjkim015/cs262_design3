@@ -255,8 +255,3 @@
 2025-03-04 01:55:01 - [SENT] to Machine 1, Logical clock: 242
 2025-03-04 01:55:01 - [RECEIVED] from Machine 0, Logical clock: 244, Queue length: 0
 2025-03-04 01:55:01 - [RECEIVED] from Machine 0, Logical clock: 245, Queue length: 0
-2025-03-04 01:55:01 - <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.CANCELLED
-	details = "Channel closed!"
-	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Channel closed!", grpc_status:1, created_time:"2025-03-04T01:55:01.613098-05:00"}"
->

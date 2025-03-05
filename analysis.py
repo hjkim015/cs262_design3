@@ -67,8 +67,9 @@ def plot_jumps(dataframes, experiment_path, experiment_config):
 
         # print("dataframe before:", df)
         df = df.sort_values("timestamp")  
-        df["jumps"] = df["logical_clock"].diff()
+        df["jumps"] = abs(df["logical_clock"].diff())
         mean_jumps = df.groupby("timestamp", as_index=False, sort=True)["jumps"].mean()  # handle duplicate x-value
+        print(df)
    
 
         # Plot the logical clock values

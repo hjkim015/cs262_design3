@@ -8,84 +8,84 @@ import logging
 from queue import Queue
 import queue
 import threading
+import socket
 import os
 from google.protobuf import empty_pb2
+from multiprocessing import Queue
+import multiprocessing
+import json
+
+class Message:
+    """Class to represent a message sent between machines."""
+    def __init__(self, sender_id, logical_clock):
+        self.sender_id = sender_id
+        self.logical_clock = logical_clock
+
+    def to_json(self):
+        # Convert the message to a JSON string
+        return json.dumps(self.__dict__)
+
+    @staticmethod
+    def from_json(json_string):
+        # Create a message object from a JSON string
+        data = json.loads(json_string)
+        return Message(data["sender_id"], data["logical_clock"])
 
 class Machine(system_pb2_grpc.PeerServiceServicer):
-    def __init__(self, machine_id: int, port: str, clock_rate: int, peers: list, peers_id: list, log_path=None):
+    def __init__(self, machine_id: int, host: str, port: int, clock_rate: int, peers: list, peers_id: list, log_path=None):
         """Initialize the machine."""
+
         # Initialize the logical clock
         self.logical_clock = 0
         self.clock_rate = clock_rate
         self.cycle_time = 1 / clock_rate
         
-        # Initialize the machine ID, peer addresses, and message queue
+        # Initialize the sockets and message queue
         self.machine_id = machine_id
-        self.peers = peers # list of peer addresses: ["localhost:50051", "localhost:50052"]
+        self.peers = peers # list of peer addresses: [50051, 50052]
         self.peers_id = peers_id # list of peer ids: [0, 1]
+        self.host = host
         self.port = port
-        self._channels = [] # list of channels to peers
-        self._stubs = [] # list of stubs to peers
-        self._receive_threads = [] # list of threads for receiving from peers
-        self.message_queue = Queue()
-        self._stop_event = threading.Event()
+        # Necessary to avoid Unix .qsize bug
+        m = multiprocessing.Manager()
+        self.message_queue = m.Queue()
         
         # Flag to indicate if the machine is running
-        self.running = False
-        # Last message sent by machine
-        self.last_sent_message = None
+        self.running = multiprocessing.Value('b', False)
 
-        # Initialize the logger
-        if not os.path.exists(log_path):
-            os.makedirs(log_path)
-        self.logger = logging.getLogger(f"{log_path}/machine_{machine_id}")
-        self.logger.setLevel(logging.INFO)
-        handler = logging.FileHandler(f"{log_path}/machine_{machine_id}.log", mode='w')
-        handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
-        self.logger.addHandler(handler)   
-        # Write first log message
-        self.logger.info(f"[INIT] with clock rate {self.clock_rate} and peers {self.peers}, {self.peers_id}") 
-
-    def SendMessage(self, request, context):
-        """Receive a SendMessage request (unary) from a peer and enqueue it."""
-        self.message_queue.put(request)
-        return empty_pb2.Empty()
-    
-    def ReceiveMessages(self, request, context):
-        """Stream messages to a peer requesting ReceiveMessages from this machine's queue."""
-        while not self._stop_event.is_set():
-            try:
-                # If there is a message to send, yield it
-                if self.last_sent_message is not None:
-                    msg = self.last_sent_message
-                    self.last_sent_message = None # Reset the last sent message
-                    yield msg
-            except queue.Empty:
-                pass
+        self.log_path = log_path
+        
+        # Set up server to listen for messages
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.server.bind((self.host, self.port))
+        self.server.listen()
 
     def _start_server(self):
-        """Start the gRPC server in a separate thread"""
-        self.server = grpc.server(ThreadPoolExecutor(max_workers=10))
-        system_pb2_grpc.add_PeerServiceServicer_to_server(self, self.server)
-        self.server.add_insecure_port(f"[::]:{self.port}")
-        self.server.start()
-
-        # Connect to peers & start streaming from them
-        for p in self.peers:
-            channel = grpc.insecure_channel(f'{p}')
-            stub = system_pb2_grpc.PeerServiceStub(channel)
-            self._channels.append(channel)
-            self._stubs.append(stub)
-
-            t = threading.Thread(target=self._receive_from_peer, args=(stub,))
-            t.start()
-            self._receive_threads.append(t)
+        """Start the server in a separate thread"""
+        
+        # Start listener thread for incoming connections
+        listener_thread = threading.Thread(target=self._receive_messages, daemon=True)
+        listener_thread.start()
         
         # Give time for all machines to start up
         time.sleep(2)
 
         # Set the running flag
         self.running = True
+
+        # Initialize the logger
+        log_path = self.log_path
+        if not os.path.exists(log_path):
+            os.makedirs(log_path)
+        self.logger = logging.getLogger(f"{log_path}/machine_{self.machine_id}")
+        self.logger.setLevel(logging.INFO)
+        handler = logging.FileHandler(f"{log_path}/machine_{self.machine_id}.log", mode='w')
+        handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S'))
+        self.logger.addHandler(handler)   
+        # Write first log message
+        self.logger.info(f"[INIT] with clock rate {self.clock_rate} and peers {self.peers}, {self.peers_id}") 
+
 
     def run(self, p_a, p_b, p_c):
         """Main loop for processing messages and events
@@ -136,34 +136,50 @@ class Machine(system_pb2_grpc.PeerServiceServicer):
             # Bookkeeping
             end = time.time()
             time.sleep(max(0,self.cycle_time - (end - start)))
+            
+    def _receive_messages(self):
+        """Listen for incoming connections from other machines"""
+        while self.running:
+            try:
+                peer, _ = self.server.accept()
+                listening_thread = threading.Thread(target=self._service_socket, args=(peer,), daemon=True)
+                listening_thread.start()
+            except Exception as e:
+                self.logger.error(f"Error accepting connection from peer {peer}: {e}")
+
+    def _service_socket(self, peer):
+            """Handle messages coming an existing connection"""
+            try:
+                data = peer.recv(1024)
+            
+                # Deserialize the message and put on queue
+                msg = Message.from_json(data.decode())
+                self.message_queue.put(msg)
+            except Exception as e:
+                self.logger.error(f"Error servicing connection from peer {peer}: {e}")
+            finally:
+                peer.close()
 
     def _send_message(self, target):
-        """Send a message to peer via unary calls."""
-        try:
-            # Identify target peer's stub
-            stub = self._stubs[target]
-            msg = system_pb2.Message(sender_id=self.machine_id, logical_clock=self.logical_clock)
-            # Send message to target peer
-            stub.SendMessage(msg)
-            self.logger.info(f"[SENT] to Machine {self.peers_id[target]}, Logical clock: {self.logical_clock}")
-            self.last_sent_message = msg
-        except grpc.RpcError as e:
-            self.logger.error(f"{e}")
+        """Send a message to peer"""
 
-    def _receive_from_peer(self, stub):
-        """Keep reading messages from a peer's stream and enqueue them."""
+        peer = None
         try:
-            for msg in stub.ReceiveMessages(empty_pb2.Empty()):
-                self.message_queue.put(msg)
-                if self._stop_event.is_set():
-                    break
-        except grpc.RpcError:
-            pass  # Peer might be down or closed
+            # Create message
+            msg = Message(self.machine_id, self.logical_clock)
+            peer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            peer.connect((self.host, self.peers[target]))
+            peer.sendall(msg.to_json().encode())
+        except Exception as e:
+            self.logger.error(f"Error sending message to port {target}: {e}")
+        finally:
+            self.logger.info(f"[SENT] to Machine {self.peers_id[target]}, Logical clock: {self.logical_clock}")
+
+            if peer:
+                peer.close()
+
         
     def stop(self):
         """Signal stop, close channels, and end run loop."""
         self.running = False
-        self._stop_event.set()
-        for ch in self._channels:
-            ch.close()
-
+        self.server.close()

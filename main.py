@@ -17,6 +17,7 @@ with open("experiment_config.yaml", "r") as f:
     DURATION = config["DURATION"]
     CYCLE_MAX = config["CYCLE_MAX"]
     BASE_PORT = config["BASE_PORT"]
+    HOST = config.get("HOST", "localhost")
 
 if __name__ == "__main__":
     # Run the experiment N_TRIALS
@@ -40,25 +41,25 @@ if __name__ == "__main__":
             # Make sure each machine is not listed as its own peer
             for j in range(N_MACHINES):
                 if j != i:
-                    peers.append(f"localhost:{BASE_PORT + j}")
+                    peers.append(BASE_PORT + j)
                     peers_id.append(j)
             # Create machine
-            m = Machine(i, my_port, clock_rate, peers, peers_id, log_path=log_folder)
+            m = Machine(i, HOST, my_port, clock_rate, peers, peers_id, log_path=log_folder)
             machines.append(m)
 
         # Start all machines on separate threads
         threads = []
         for m in machines:
-            t = threading.Thread(target=m.run, args=(PROB_MSG_A,PROB_MSG_B,PROB_MSG_C),daemon=True)
+            t = multiprocessing.Process(target=m.run, args=(PROB_MSG_A,PROB_MSG_B,PROB_MSG_C),daemon=True)
             t.start()
             threads.append(t)
-
+        
         # Allow threads to run for RUN_DURATION seconds
         time.sleep(DURATION)
 
         # Stop all machines
-        for m in machines:
-            m.stop()
+        for t in threads:
+            t.terminate()
 
         # Wait for them to shut down
         for t in threads:

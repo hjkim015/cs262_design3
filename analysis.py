@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import os
 import json
+import sys
 
 def preprocess(df):
     """Convert timestamp to datetime and round logical clock values."""
@@ -99,10 +100,16 @@ def plot_operations(dataframes, experiment_path, experiment_config):
 
 
 if __name__ == "__main__":
-    """Main function to analyze the logs."""
+    """Main function to create graphs for the logs."""
+    
     logs_directory = f"{os.getcwd()}/logs"
+    # If user provides a specific folder to analyze
+    if len(sys.argv) > 1:
+        log_folders = [sys.argv[1]]
+    else:
+        log_folders = os.listdir(logs_directory)
  
-    for experiment in os.listdir(logs_directory):
+    for experiment in log_folders:
         # input("EXPERIMENT")
         experiment_path = os.path.join(logs_directory, experiment)
         

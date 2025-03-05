@@ -49,6 +49,44 @@ def plot_raw(dataframes, experiment_path, experiment_config):
     plt.savefig(os.path.join(experiment_path, "plot_raw_clock.png"))
     plt.close()
 
+def plot_jumps(dataframes, experiment_path, experiment_config):
+    '''Plots the clock jumps between instructions per machine'''
+
+    plt.figure(figsize=(12, 6))
+
+    colors = ['blue', 'red', 'green']
+
+    for i, df in enumerate(dataframes):
+        # Get machine clock rate
+        cr = experiment_config[f'machine_{i}']
+
+        # Skip if the required columns are missing
+        if "timestamp" not in df.columns or "logical_clock" not in df.columns:
+            print(f"Skipping {experiment} (Missing required columns in {csv_files[i]})")
+            continue
+
+        # print("dataframe before:", df)
+        df = df.sort_values("timestamp")  
+        df["jumps"] = df["logical_clock"].diff()
+        mean_jumps = df.groupby("timestamp", as_index=False, sort=True)["jumps"].mean()  # handle duplicate x-value
+   
+
+        # Plot the logical clock values
+        plt.plot(mean_jumps["timestamp"], mean_jumps["jumps"], label=f"Machine {i}: Clock Rate {cr}", color=colors[i])  
+        
+        plt.title(f"{experiment}: Raw Logical Clock Values")
+        plt.xlabel("Timestamp")
+        plt.ylabel("Logical Clock Value Jump Averages / Second")
+        plt.xticks(rotation=90)
+        plt.legend()
+        plt.grid(True)
+        plt.tight_layout()
+
+        # Save the plot
+        plt.savefig(os.path.join(experiment_path, f"plot_jumps_{i}.png"))
+        plt.close()
+
+
 def plot_queue_length(dataframes, experiment_path, experiment_config):
     """Plot the queue length for each machine."""
     plt.figure(figsize=(10,6))
@@ -134,8 +172,10 @@ if __name__ == "__main__":
         # Preprocess the dataframes
         dataframes = [preprocess(df) for df in dataframes]
 
-        plot_raw(dataframes, experiment_path, experiment_config)
-        plot_queue_length(dataframes, experiment_path, experiment_config)
-        plot_operations(dataframes, experiment_path, experiment_config)
+        # plot_raw(dataframes, experiment_path, experiment_config)
+        # plot_queue_length(dataframes, experiment_path, experiment_config)
+        # plot_operations(dataframes, experiment_path, experiment_config)
+        plot_jumps(dataframes, experiment_path, experiment_config)
+        input("Experiment")
 
 

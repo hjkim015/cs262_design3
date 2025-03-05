@@ -35,7 +35,7 @@ def plot_raw(dataframes, experiment_path, experiment_config):
         df["logical_clock"] = df["logical_clock"].round(4)
 
         # Plot the logical clock values
-        plt.plot(df["timestamp"], df["logical_clock"], label=f"Machine {i+1}: Clock Rate {cr}", color=colors[i])  
+        plt.plot(df["timestamp"], df["logical_clock"], label=f"Machine {i}: Clock Rate {cr}", color=colors[i])  
     
     plt.title(f"{experiment}: Raw Logical Clock Values")
     plt.xlabel("Timestamp")
@@ -58,7 +58,7 @@ def plot_queue_length(dataframes, experiment_path, experiment_config):
         cr = experiment_config[f'machine_{i}']
 
         colors = ['blue', 'red', 'green']
-        plt.plot(df['timestamp'], df['queue_length'], label=f'Machine {i + 1}: Clock Rate {cr}', color=colors[i])
+        plt.plot(df['timestamp'], df['queue_length'], label=f'Machine {i}: Clock Rate {cr}', color=colors[i])
 
     plt.xlabel('Timestamp')
     plt.ylabel('Queue Length')
@@ -85,7 +85,7 @@ def plot_operations(dataframes, experiment_path, experiment_config):
 
         # Use bar plot to stack different machines on top of each other
         plt.bar(operation_counts.index, operation_counts.values, 
-                color=colors[i], label=f'Machine {i + 1}')
+                color=colors[i], label=f'Machine {i}')
         # plt.bar(df['operation'].value_counts())
 
     plt.xlabel('Operation')
@@ -99,13 +99,10 @@ def plot_operations(dataframes, experiment_path, experiment_config):
 
 
 if __name__ == "__main__":
+    """Main function to analyze the logs."""
     logs_directory = f"{os.getcwd()}/logs"
  
-    # for experiment in os.listdir(logs_directory):
-    experiments = ['run_prob_1741198241','run_prob_1741198357',
-                   'run_prob_1741198507','run_prob_1741198587',
-                   'run_prob_1741198676','run_prob_1741198826',]
-    for experiment in experiments:
+    for experiment in os.listdir(logs_directory):
         # input("EXPERIMENT")
         experiment_path = os.path.join(logs_directory, experiment)
         

@@ -4,5 +4,5 @@ N_TRIALS: 1 # number of trials
 N_MACHINES: 3 # number of machines
 PROB_MSG_A: 1 # probability threshold of sending message to machine A (out of 10)
 PROB_MSG_B: 1 # probability threshold of sending message to machine B
-PROB_MSG_C: 8 # probability threshold of sending message to machine A, B (above this is probability of internal event)
+PROB_MSG_C: 10 # probability threshold of sending message to machine A, B (above this is probability of internal event)
 BASE_PORT: 50050

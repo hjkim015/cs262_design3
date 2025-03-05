@@ -95,7 +95,7 @@ def plot_queue_length(dataframes, experiment_path, experiment_config):
     plt.close()
 
 if __name__ == "__main__":
-    logs_directory = '/Users/durdledoor/Library/Mobile Documents/com~apple~CloudDocs/testing/cs262_design3/logs'
+    logs_directory = f"{os.getcwd()}/logs"
  
     for experiment in os.listdir(logs_directory):
         # input("EXPERIMENT")

@@ -74,9 +74,9 @@ def plot_jumps(dataframes, experiment_path, experiment_config):
         # Plot the logical clock values
         plt.plot(mean_jumps["timestamp"], mean_jumps["jumps"], label=f"Machine {i}: Clock Rate {cr}", color=colors[i])  
         
-        plt.title(f"{experiment}: Raw Logical Clock Values")
+        plt.title(f"{experiment}: Logical Clock Value Jump Averages / Second")
         plt.xlabel("Timestamp")
-        plt.ylabel("Logical Clock Value Jump Averages / Second")
+        plt.ylabel("Jump Average")
         plt.xticks(rotation=90)
         plt.legend()
         plt.grid(True)
@@ -176,6 +176,6 @@ if __name__ == "__main__":
         # plot_queue_length(dataframes, experiment_path, experiment_config)
         # plot_operations(dataframes, experiment_path, experiment_config)
         plot_jumps(dataframes, experiment_path, experiment_config)
-        input("Experiment")
+
 
 

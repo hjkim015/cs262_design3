@@ -70,6 +70,34 @@ def plot_queue_length(dataframes, experiment_path, experiment_config):
     plt.savefig(os.path.join(experiment_path, "plot_queue_length.png"))
     plt.close()
 
+def plot_operations(dataframes, experiment_path, experiment_config):
+    '''Prints a histogram of the number of Operation occurrences'''
+
+    plt.figure(figsize=(10,6))
+
+    for i, df in enumerate(dataframes):
+        #Createa a new dataframe 
+        cr = experiment_config[f'machine_{i}']
+
+        colors = ['blue', 'red', 'green']
+
+        operation_counts = df['operation'].value_counts().sort_index()
+
+        # Use bar plot to stack different machines on top of each other
+        plt.bar(operation_counts.index, operation_counts.values, 
+                color=colors[i], label=f'Machine {i + 1}')
+        # plt.bar(df['operation'].value_counts())
+
+    plt.xlabel('Operation')
+    plt.ylabel('Count')
+    plt.title('Operation Count per Machine')
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(os.path.join(experiment_path, "plot_op_count.png"))
+    plt.close()
+
+
 if __name__ == "__main__":
     logs_directory = f"{os.getcwd()}/logs"
  
@@ -111,5 +139,6 @@ if __name__ == "__main__":
 
         plot_raw(dataframes, experiment_path, experiment_config)
         plot_queue_length(dataframes, experiment_path, experiment_config)
+        plot_operations(dataframes, experiment_path, experiment_config)
 
 

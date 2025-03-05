@@ -49,30 +49,6 @@ def plot_raw(dataframes, experiment_path, experiment_config):
     plt.savefig(os.path.join(experiment_path, "plot_raw_clock.png"))
     plt.close()
 
-def plot_jumps(dataframes, experiment_path, experiment_config):
-    """Plot the jumps in logical clock values for each machine."""
-
-    plt.figure(figsize=(20, 6))
-
-    for i, df in enumerate(dataframes):
-        # Get machine clock rate
-        cr = experiment_config[f'machine_{i}']
-
-        # Calculate the jumps in logical clock values for each machine
-        df['logical_clock_jump'] = df['logical_clock'].diff()
-        colors = ['blue', 'red', 'green']
-        plt.bar(df['timestamp'], df['logical_clock_jump'], label=f'Machine {i+1}: Clock Rate {cr}', color=colors[i])
-
-    plt.xlabel('Timestamp')
-    plt.ylabel('Logical Clock Jump')
-    plt.title('Jumps in Logical Clock Values for Each Machine')
-    plt.legend()
-    plt.grid(True)
-    plt.xticks(rotation=90)
-    plt.tight_layout()
-    plt.savefig(os.path.join(experiment_path, "plot_clock_jumps.png"))
-    plt.close()
-
 def plot_queue_length(dataframes, experiment_path, experiment_config):
     """Plot the queue length for each machine."""
     plt.figure(figsize=(10,6))
@@ -97,7 +73,11 @@ def plot_queue_length(dataframes, experiment_path, experiment_config):
 if __name__ == "__main__":
     logs_directory = f"{os.getcwd()}/logs"
  
-    for experiment in os.listdir(logs_directory):
+    # for experiment in os.listdir(logs_directory):
+    experiments = ['run_prob_1741198241','run_prob_1741198357',
+                   'run_prob_1741198507','run_prob_1741198587',
+                   'run_prob_1741198676','run_prob_1741198826',]
+    for experiment in experiments:
         # input("EXPERIMENT")
         experiment_path = os.path.join(logs_directory, experiment)
         
@@ -130,7 +110,6 @@ if __name__ == "__main__":
         dataframes = [preprocess(df) for df in dataframes]
 
         plot_raw(dataframes, experiment_path, experiment_config)
-        plot_jumps(dataframes, experiment_path, experiment_config)
         plot_queue_length(dataframes, experiment_path, experiment_config)
 
 

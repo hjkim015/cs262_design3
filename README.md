@@ -52,3 +52,5 @@ for each ```logs``` experiment folder
 - ```machine_0.csv```: experiment tabular data, parsed from logs (also exists for machine_1, machine_2)
 - ```clock_rates.json```: clock_rate for each machine
 - ```config.yaml```: auto-generated snapshot of experiment configs
+
+```tests``` folder
